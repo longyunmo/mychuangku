@@ -1,0 +1,22 @@
+.zhu_logo{width: 1210px;height: 80px;margin:0 auto;}
+.zhu_zhong{width: 1210px;height: 600px;margin:20px auto; border: 1px solid gainsboro; border-radius: 5px;}
+#zhu_zshang{width: 1210px;height: 30px;float: left; background: #F5F5F5;border-bottom: 1px solid gainsboro; line-height: 30px; border-radius: 5px;}
+#zhu_zshang>span{width:100px;height: 30px;display: block; text-align: center;float: left;}
+#zhu_zshang>strong{width: 140px;height: 30px; float: right;}
+#zhu_zshang>strong>a{text-decoration: none;color:red;}
+#zhu_zshang>strong>a:hover{color:blue;border-bottom: 1px solid red;}
+
+.zhu_zuo{width: 700px;height:400px;float: left; margin:20px 0px;}
+.zhu_you{width: 500px;height: 400px;float: left; margin:20px 0px;}
+.zhu_you img{display: block; margin: 30px 40px; border-left: 1px solid gainsboro;}
+ 
+.o{width: 160px;height: 400px;margin:30px 40px; position: inherit;}
+.o>p{width: 500px;height: 40px;line-height: 40px;padding: 10px 0px;}
+.o>p>a{width: 80px;height:15px;display: block; float: left; font-size: 15px;}
+#a,#b,#c,#d,#f{float: left;line-height: 35px;width: 265px;}
+.o1{width: 160px;height: 218px;margin:0 auto;  position: absolute;left:500px;top: 425px;}
+#e{width: 150px;height: 30px;background:turquoise;color: white; margin-top: 20px;margin-left: 100px; overflow: 0; }
+#qq{width: 90px;height: 35px;margin:0px 20px; text-align: center;line-height: 35px;font-size: 15px;background: blueviolet; color: white; border: none;volume: none;}
+#a1,#a2,#a3,#a4{display: none; font-size: 13px; height: 50px;margin: 10px 0px; color: red;}
+#aa,#ab,#ac,#ad{display: none;font-size: 13px;height: 50px;margin: 10px 0px; color: red;}
+

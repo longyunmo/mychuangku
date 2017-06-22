@@ -1,0 +1,96 @@
+.ji_zhong{width: 1210px;height: 930px;margin: 10px auto;}
+.ji_zhong>p{width: 1210px;height: 15px;line-height: 15px;}
+.ji_zhong>p>a{text-decoration: none;color: gray;}
+.ji_zhong>p>a:hover{color: red;border-bottom: 1px solid red;}
+
+/*中间左边部分*/
+.ji_zuo{width: 210px;height: 900px;background: #FBFBFB;float: left;}
+.jzuo_a{width: 210px;height: 185px;background: #e8dfde;}
+.jzuo_a>h2{color: white;background:#ED5854;width: 210px;height: 40px;line-height: 40px;}
+.ja{width:210px;height: 90px;margin: 10px auto;}
+.ja_mast{width: 80px;height: 80px;border-radius: 50%;background: white;float: left;margin-left: 20px;}
+.ja_mast>img{width: 76px;height: 76px;border-radius: 50%;margin:2px 2px auto;}
+.ja>ul{width: 80px;height: 80px;float: left;}
+.ja>ul>li{width: 80px;height: 20px;margin: 10px 10px;}
+.ja>ul>li>i{width: 15px;height: 15px;}
+.ja>ul>li>i>img{width: 15px;height: 15px;}
+.ja>ul>li>a{color: grey;text-decoration: none;}
+.ja>ul>li>a:hover{color: red;border-bottom: 1px solid red;}
+.jzuo_a>p{width: 200px;height: 30px;line-height: 30px;font-size: 15px;font-weight: bold;margin: 0px 10px;color: red;}
+
+.jzuo_b{width: 210px;height: 215px;}
+.jzuo_b>p{width: 140px;height: 40px;line-break: 40px;margin: 0px 30px;}
+.jzuo_b>p>img{width: 25px;height: 25px;display: block;float: left;}
+.jzuo_b>p>a{color: black;font-size: 14px;display: block;float: left;margin: 5px 5px;}
+.jzuo_b>ul{width: 210px;height: 180px;}
+.jzuo_b>ul>li{width:150px;height: 20px;margin: 3px 30px;line-height: 20px;}
+.jzuo_b>ul>li:hover{background: #F0F0F0;}
+.jzuo_b>ul>li:hover a{color: red;}
+.jzuo_b>ul>li>a:hover{border-bottom: 1px solid red;}
+.jzuo_b>ul>li>a{height: 20px; display: block;float: left; font-size: 13px;margin-left: 30px;}
+.jzuo_b>ul>li>span{width: 30px;height: 20px; display: block;float: left;font-size: 14px;margin-left: 30px;}
+.jzuo_b>ul>p{width:150px;height: 20px;margin: 3px 30px;line-height: 20px;}
+.jzuo_b>ul>p:hover{background: #F0F0F0;}
+.jzuo_b>ul>p>a{margin-left: 30px;}
+.jzuo_b>ul>p:hover a{border-bottom: 1px solid red;color: red;}
+
+
+.jzuo_c{width: 210px;height: 235px;}
+.jzuo_c>p{width: 140px;height: 40px;line-break: 40px;margin: 0px 30px;}
+.jzuo_c>p>img{width: 25px;height: 25px;display: block;float: left;}
+.jzuo_c>p>a{color: black;font-size: 14px;display: block;float: left;margin: 5px 5px;}
+.jzuo_c>ul{width: 210px;height: 200px;}
+.jzuo_c>ul>li{width:150px;height: 20px;margin: 3px 30px;line-height: 20px;}
+.jzuo_c>ul>li:hover{background: #F0F0F0;}
+.jzuo_c>ul>li:hover a{color: red;}
+.jzuo_c>ul>li>a:hover{border-bottom: 1px solid red;}
+.jzuo_c>ul>li>a{width: 95px; height: 20px; display: block;float: left; font-size: 12px;margin-left: 30px;}
+.jzuo_c>ul>li>span{height: 20px; display: block;float: left;font-size: 14px;margin-left: 10px;}
+
+.jzuo_d{width: 210px;height: 215px;}
+.jzuo_d>p{width: 140px;height: 40px;line-break: 40px;margin: 0px 30px;}
+.jzuo_d>p>img{width: 25px;height: 25px;display: block;float: left;}
+.jzuo_d>p>a{color: black;font-size: 14px;display: block;float: left;margin: 5px 5px;}
+.jzuo_d>ul{width: 210px;height: 180px;}
+.jzuo_d>ul>li{width:150px;height: 20px;margin: 3px 30px;line-height: 20px;}
+.jzuo_d>ul>li:hover{background: #F0F0F0;}
+.jzuo_d>ul>li:hover a{color: red;}
+.jzuo_d>ul>li>a:hover{border-bottom: 1px solid red;}
+.jzuo_d>ul>li>a{height: 20px; display: block;float: left; font-size: 13px;margin-left: 30px;}
+.jzuo_d>ul>li>span{width: 30px;height: 20px; display: block;float: left;font-size: 14px;margin-left: 30px;}
+
+/*中间右边部分*/
+.my_dizhi{width: 980px;height: 500px;float: left;margin-left: 20px;}
+.my_dizhi>p{width: 118px;height: 38px;border-bottom: 2px solid red;}
+.my_dizhi>p>a{width: 118px;height: 30px;line-height: 30px;font-size: 18px;text-align: center;display: block;}
+.dz_a{width: 980px;height: 80px;background: #DFF0D8;margin: 10px 0px;}
+.dz_a>h2{margin: 10px 20px;color: green;}
+.dz_a>p{margin: 10px 20px; color: green;}
+.dz_b{width: 980px;height: 250px;margin:20px 0px;}
+#shdz{width: 140px;height: 30px;background: #ED5854;border: 0;outline: 0; color: white;margin-left: 300px;}
+.idiv{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

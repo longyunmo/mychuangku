@@ -1,0 +1,128 @@
+.gouwu_zhong{
+	width: 1210px;
+	height: 143px;
+	margin:10px auto;
+	text-align: center;
+}
+.gouwu_zhong img{
+	width: 295px;
+	height: 100px;
+	padding: 20px 0px;
+	display: block;
+	float: left;
+}
+.gouwu_shang{
+	width: 660px;
+	height: 100px;
+	margin: 20px;
+	float: left;
+}
+.gouwu_shang>ul{width: 700px;height: 50px;margin: 25px 0px;}
+.gouwu_shang>ul>li{width: 120px;height: 50px;float: left;}
+.gouwu_shang>ul>li>p{font-size: 15px;width: 120px;height:20px;}
+.gouwu_shang>ul>li>p>a{width: 20px;height:20px; background: gainsboro; display: block;float: left;border-radius: 50%; font-size: 15px; color: white;}
+.gouwu_shang>ul>li>p>span{width: 100px;height: 10px;background: gainsboro; display: block;float: left;margin-top:5px;}
+
+/*第二模块*/
+.mokuai_gouwu{width: 100%;height: 1200px;background: #F9F9F9;}
+#product{
+            width:1210px;
+            margin:0px auto;
+}
+#list{
+    clear:both;
+    overflow:hidden;
+    border-bottom:5px solid #ccc;
+}
+#list div{
+    float:left;
+    font:14px/32px "";
+    color:#333;
+}
+#list_button{width: 15px;height: 15px;}
+.h1,.c1{width: 25%;}
+.h2,.c2{width: 10%;}
+.h3,.c3{width: 20%; }
+.am-num-text{}
+.shop-total,.all-total {
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #f00;
+    float: left;
+}
+.one-shop,.all-total,.shop-total {
+    width: 510px;
+}
+  
+p {margin: 0;}
+.goods-check {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+}
+.one-shop>span{display: block; width: 1210px;height: 20px;background: #EEEEEE;color: red; font-size: 15px;}
+.one-goods{width: 1210px;height: 115px; background: white; border-bottom: 1px solid gainsboro;}
+.logo_s{width:350px;height: 60px;float: left; margin: 20px 0px;}
+#gou_logo{width: 60px;height: 60px; display: block;float: left; margin: 0px 50px;}
+
+.goods-msg{width: 500px;height:95px;float: left;}
+.jiesuan{width:55px;height: 20px;float: left; margin: 40px 25px;}
+.minus{width: 15px;height: 20px;}
+.plus{width: 15px;height: 20px;}
+.yuan_g{margin: 40px 25px;font-size: 18px;}
+.goods-msg,label{}
+.goods-msg,p,label {float: left;}
+.zong_gou{width: 1210px;height: 50px;border: 1px solid gainsboro; border-top: none; background: white;}
+.zong_gou>p{width: 100px;height: 30px;border: 1px solid gainsboro;margin: 10px 10px;text-align: center;line-height: 30px; float: left;}
+.zong_gou>p>a{font-size: 15px;color: #000000;font-weight: bold;}
+.zong_gou>span{display: block;width: 80px;height: 30px;margin: 10px 10px;text-align: center;line-height: 30px; float: left;}
+
+
+.gou_xia{width: 1210px;height: 700px;margin: 20px auto; background: white; border: 1px solid gainsboro;}
+.gou_ul{width: 1210px;height: 40px;margin: 0px auto;background: #EEEEEE; margin-top: 10px;}
+.gou_xia>.gou_ul>li{width: 100px;height: 30px;margin-bottom: 5px; margin: 5px 15px; background: white; float: left;text-align: center;line-height: 30px;color: #000000;}
+.gou_xia>.gou_ul>li:hover{color: red;height: 35px; margin-bottom: 0px;}
+
+.zhong-div{
+	width: 230px;
+	height: 279px;
+	margin: 20px 0px;
+	margin-left: 10px;
+	border-top: none;
+	float: left;
+}
+.logo_spana{
+	width: 161px;
+	height: 34px;
+	line-height: 15px;
+	display: block;
+	padding:0 20px;
+}
+.logo_spanb{
+	width: 30px;
+	height: 18px;
+	display: block;
+	float: left;
+	padding:0 20px;
+}
+.logo_spanc{
+	width: 100px;
+	height: 30px;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 40px;
+	float: left;
+	color: white;
+	font-size: 15px;
+	background:#E9394E;
+}
+.logo_spand{
+	width: 40px;
+	height: 20px;
+	display: block;
+	padding:0 20px;
+	float: left;
+	color: red;
+}

@@ -1,0 +1,3544 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>动态首页</title>
+		<link rel="icon" href="http://www.juhuimai.cn/animated_favicon.gif" type="image/gif" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index_file.js"></script>
+	</head>
+	<body>
+		<!--头部div-->
+		<div class="head">
+			<!--头部居中div-->
+			<div class="head-bd">
+				<!--正文div-->
+				<div class="head-container">
+					<!--左边ul-->
+					<ul class="region">
+						<li class="region1">
+							<font style="color: #fff;" id="head-region1-font">邯郸</font>
+							<div id="city-box1" style="display: none;">
+								<!--隐藏的内容、-->
+								<div style="width: 100px; height: 200px; background: salmon;"></div>
+							</div>
+						</li>
+						<li class="region2">
+							<a href="#">[切换区县]</a>
+						</li>
+					</ul>
+					
+					<!--中间的欢迎-->
+					<font class="sn-login-info">
+						<em>欢迎光临本店</em>
+						<a href="#" class="sn-login">请登录</a>
+						<a href="#" class="sn-rigsiter">免费注册</a>
+					</font>
+					
+					<!--右边的ul-->
+					<ul class="sn-quick-menu">
+						<li class="li1">
+							<div class="sn-menu">
+								<a href="#">我的信息</a>
+								<div class="menu-bd aa" style="display: none;">
+									<a href="#">已买到的宝贝</a>
+									<a href="#">我的收货地址</a>
+								</div>
+							</div>
+						</li>
+						<li class="li2">
+							<a href="#" class="mui-global-iconfont">我关注的店铺</a>
+						</li>
+						<li class="li3">
+							<a href="#" class="mui-global-iconfont">购物车</a>
+						</li>
+						<li class="li4">
+							<div class="sn-menu">
+								<a href="#">收藏夹</a>
+								<div class="menu-bd bb" style="display: none;">
+									<a href="#">收藏宝贝</a>
+									<a href="#">收藏店铺</a>
+								</div>
+							</div>
+						</li>
+						<li class="li5"> 
+							<div class="sn-menu">
+								<a href="#" class="menu-hd sn-mobile-link">手机版</a>
+								<div class="img1" style="position: absolute;display: none; width: 70px;height: 50px;">
+									<img src="img/app.jpg"  style="position: inherit; z-index: 10001;"/>
+								</div>
+							</div>
+						</li>
+						<li class="li6">
+							<div class="sn-menu">
+								<a href="#" class="menu-hd sn-shangjia-link">商家支持</a>
+								<div class="img2" style="position: absolute;display: none; width: 144px;height: 200px; border: 1px solid gainsboro;">
+									<div class="img2-shangjia">
+										<div class="img2-shangjia-p1" style="border-bottom: 1px dotted black; height: 120px; margin-left: 10px;">
+											<a><h4>商家：</h4></a>
+											<p><a>售后流程</a>   &nbsp;  <a>购物流程</a></p>
+											<p><a>订购方式</a>   &nbsp;  <a>常见问题</a></p>
+											<p><a>文章资讯</a>   &nbsp;  <a>聚惠卡</a></p>
+											<p><a>认证商家</a>   &nbsp;  <a>商学院</a></p>
+										</div>
+										<div class="img2-shangjia-p2" style="border-bottom: 1px dotted black; margin-left: 10px;">
+											<a><h5>帮助:</h5></a>
+										    <p><a>帮助中心</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="li7">
+							<div class="sn-menu">
+								<a href="#" class="menu-hd sn-wangzhan-link" style="color: none; border: none;">网址导航</a>
+								<div class="img3" style="position: absolute;left: -1150px; display: none; width: 1203px;height: 136px; border: 1px solid gainsboro;">
+									<div class="img3-wangzhan">
+										<div class="img3-wangzhan1">
+											<h4 style="color: coral; font-size: 25px;">产品分类 Product</h4>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+										</div>
+										<div class="img3-wangzhan2">
+											<h4 style="color:blue; font-size: 25px;">店铺街Market</h4>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+										</div>
+										<div class="img3-wangzhan3">
+											<h4 style="color: black; font-size: 25px;">关于我们About</h4>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--导肮条div 头部-->
+		<div class="daohangtiao-head">
+			<div class="daohangtiao-tou">
+				<!--<导航条div 左边>-->
+				<div class="daohangtiao-a">
+					<img src="img/logo_hd.jpg" style="margin-top: 5px; width: 280px; height: 110px;"/>
+				</div>
+				<!--<导航条div 中部>-->
+				<div class="daohangtiao-b">
+					<ul>
+						<li class="doahangtiao-bb">宝贝</li>
+						<li class="doahangtiao-bc">店铺</li>
+					</ul>
+					<div class="daohangtiao-btn">
+						<input type="text" id="doahangtiaotet" placeholder="请输入关键字"/>
+						<input type="button" id="doahangtiaobut" value="搜索" />
+					</div>
+					<ul class="daohangtiao-u">
+						<li style="border: none;"><a href="#" >灯饰</a></li>
+						<li><a href="#">私房菜</a></li>
+						<li><a href="#">丛台酒店</a></li>
+						<li><a href="#">非凡旅游</a></li>
+						<li><a href="#">家居</a></li>
+						<li><a href="#">三星s6</a></li>
+						<li><a href="#">苹果</a></li>
+					</ul>
+				</div>
+				<!--<导航条div 右边>-->
+				<div class="daohangtiao-c">
+					<a href="#1" class="daohangtiao-imga"><img src="img/QQ截图20170510212607.png"/></a>
+					<a href="#2" class="daohangtiao-imga"><img src="img/QQ截图20170510212628.png"/></a>
+					<a href="#3" class="daohangtiao-imga"><img src="img/QQ截图20170510212659.png"/></a>
+				</div>
+			</div>
+		</div>
+		
+		<!--<  新的 nav导航条  头部>-->
+			<div class="nav-daohangtiao">
+				<div class="nav-a">
+					<div class="nav-fenlei">
+						<a href="#" title="全部商品分类" >全部商品分类</a>
+					</div>
+					<ul class="nav-U">
+						<li><a href="#" title="首页">首页</a></li>
+						<li><a href="#" title="食品生鲜">食品生鲜</a></li>
+						<li><a href="#" title="店铺街">店铺街</a></li>
+						<li><a href="#" title="积分商城">积分商城</a></li>
+						<li><a href="#" title="优惠活动">优惠活动</a></li>
+						<li><a href="#" title="智能扫货">智能扫货</a></li>
+						<li><a href="#" title="文章资讯">文章资讯</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		<!--	轮播图 div-->
+		<div class="lunboon">
+			<div id="lunboon-div1">
+				<img src="img/api_thumb_450 (1).jpg" />
+				<img src="img/api_thumb_450 (2).jpg" />
+				<img src="img/api_thumb_450 (3).jpg" />
+				<img src="img/api_thumb_450 (4).jpg" />
+				<img src="img/api_thumb_450 (5).jpg" />
+				<img src="img/api_thumb_450 (6).jpg" />
+				<img src="img/api_thumb_450 (7).jpg" />
+				<img src="img/api_thumb_450 (8).jpg" />
+		    </div>
+		    <div id="lunboon-div2">
+				<span class="chengent"></span>
+				<span ></span>
+				<span ></span>
+				<span ></span>
+				<span ></span>
+				<span ></span>
+				<span ></span>
+				<span ></span>
+				<span ></span>
+				
+		    </div>
+		</div>
+		<!--	结束轮播图 div-->
+		<!--二级菜单 div-->
+	    <div class="erjicaidan">
+	    	
+		    <div class="ciadanlist1">
+		    	<div class="list-div1">
+		    		<h3 class="list-div1-H">食品生鲜</h3>
+		    		<em>保健食品</em>&nbsp;&nbsp;<em>进口食品</em>
+		    	</div>
+				<div class="caidanyin1">
+					<img src="img/QQ截图20170511131028.png" />
+				</div>
+		    </div>
+		    
+		    <div class="ciadanlist2">
+		    	<div class="list-div1">
+		    		<h3 class="list-div1-H">食品生鲜</h3>
+		    		<em>保健食品</em>&nbsp;&nbsp;<em>进口食品</em>
+		    	</div>
+				<div class="caidanyin2">
+					<img src="img/QQ截图20170511131028.png" />
+				</div>
+		    </div>
+		    
+		    <div class="ciadanlist3">
+		    	<div class="list-div1">
+		    		<h3 class="list-div1-H">食品生鲜</h3>
+		    		<em>保健食品</em>&nbsp;&nbsp;<em>进口食品</em>
+		    	</div>
+				<div class="caidanyin3">
+					<img src="img/QQ截图20170511131028.png" />
+				</div>
+		    </div>
+		    
+		    <div class="ciadanlist4">
+		    	<div class="list-div1">
+		    		<h3 class="list-div1-H">食品生鲜</h3>
+		    		<em>保健食品</em>&nbsp;&nbsp;<em>进口食品</em>
+		    	</div>
+				<div class="caidanyin4">
+					<img src="img/QQ截图20170511131028.png" />
+				</div>
+		    </div>
+		    
+		    <div class="ciadanlist5">
+		    	<div class="list-div1">
+		    		<h3 class="list-div1-H">食品生鲜</h3>
+		    		<em>保健食品</em>&nbsp;&nbsp;<em>进口食品</em>
+		    	</div>
+				<div class="caidanyin5">
+					<img src="img/QQ截图20170511131028.png" />
+				</div>
+		    </div>
+		    
+		    <div class="ciadanlist6">
+		    	<div class="list-div1">
+		    		<h3 class="list-div1-H">食品生鲜</h3>
+		    		<em>保健食品</em>&nbsp;&nbsp;<em>进口食品</em>
+		    	</div>
+				<div class="caidanyin6">
+					<img src="img/QQ截图20170511131028.png" />
+				</div>
+		    </div>
+		    
+		    <div class="ciadanlist7">
+		    	<div class="list-div1">
+		    		<h3 class="list-div1-H">食品生鲜</h3>
+		    		<em>保健食品</em>&nbsp;&nbsp;<em>进口食品</em>
+		    	</div>
+				<div class="caidanyin7">
+					<img src="img/QQ截图20170511131028.png" />
+				</div>
+		    </div>
+		    
+		    <div class="ciadanlist8">
+		    	<div class="list-div1" style="border-bottom: none;">
+		    		<h3 class="list-div1-H">食品生鲜</h3>
+		    		<em>保健食品</em>&nbsp;&nbsp;<em>进口食品</em>
+		    	</div>
+				<div class="caidanyin8">
+					<img src="img/QQ截图20170511131028.png" />
+				</div>
+		    </div>
+		    
+		</div>
+		<div class="erjicaidan-naw">
+			<img src="img/$RD0L7KS.jpg" class="erjicaidan-naw-img" />
+			<img src="img/$RB42GA7.jpg" class="erjicaidan-naw-img" />
+			<img src="img/$R8B9KZE.jpg" class="erjicaidan-naw-img" />
+		</div>
+		<div class="erjicaidan-var">
+
+			<div class="erjicaidan-bb">
+				<div class="erjicaidan-title" style="width: 210px;height: 37px;">
+					<h3 style="margin-left: 10px;line-height: 37px; color: black;">四种以下订单</h3>
+			    </div>
+			<ul>
+				<li id="title-a">
+					<span><b style="margin-top: 5px; display: block; color: white;">1</b></span>
+					<p>访问网站直接下订单</p>
+				</li>
+				<li id="title-b">
+					<span class="spanb"><b style="margin-top: 5px; display: block; color: white;">2</b></span>
+					<p style="width: 165px; height: 20px; margin-top: 20px;">直接拨打电话</p>
+					<p style="width: 165px; height: 20px;margin-left: 30px;">如果在您不方便上网的时候</p>
+					<h2 style="width: 165px; margin-left: 30px; color:red;">400-0310-707</h2>
+				</li>
+				<li id="title-c">
+					<span class="spanc"><b style="margin-top: 5px; display: block; color: white;">3</b></span>
+					<p>支持微商城下订单</p>
+					<p style="margin-left: 30px;">关注微商城</p>
+					<img src="img/weixin.jpg" style="width: 68px;height: 68px;float: right; margin-top: -10px;" />
+				</li>
+				<li id="title-d">
+					<span class="spand"><b style="margin-top: 5px; display: block; color: white;">4</b></span>
+					<p style="font-size: 12px;">支持手机APP下订单</p>
+				</li>
+			</ul>
+			</div>
+			<div class="erjicaidan-cc">
+				<div class="cc-a">
+					<ul>
+						<li id="erjicaidan-LI1" class="color-yang"><a>招商入驻</a></li>
+					    <li id="erjicaidan-LI2"><a>商城公告</a></li>
+				    </ul>
+				</div>
+				<div class="cc-div">
+					<div class="zb1">
+						<img src="img/QQ截图20170512094612.png" />	
+					</div>
+					<div >
+						<img src="img/QQ截图20170512094635.png" />	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--二级菜单结束 div-->
+		<!--新的物品导航条1-->
+		<div class="logo-html">
+			<div class="new-daohangtiao2">
+				<ul class="new-UL">
+					<li>白酒品牌</li>
+					<li>地方名酒</li>
+					<li>红洋酒品牌</li>
+				</ul>
+		    </div>
+		    <div class="logo-body">
+				<div>
+					<p>
+						<a class="box-div">
+						    <img src="img/1450747557149339013.jpg" class="logo-img" />
+					    </a>
+						<a class="box-div">
+							<img src="img/1451495095040014292.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495209486986888.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495272782115178.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495325286608231.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+						    <img src="img/1451495384686130361.jpg" class="logo-img" />
+					    </a>
+					</p>
+					<p style="margin-top: 15px;">
+						<a class="box-div">
+						    <img src="img/1451495488942571449.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495587613306777.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495651715511524.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495777494839060.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495846406043546.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+						    <img src="img/1451495885110749360.jpg" class="logo-img" />
+					    </a>
+					</p>
+					<p>
+						<a class="box-div">
+						    <img src="img/1451495885110749360.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495209486986888.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451496153977939039.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451496265186291427.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451496295152745194.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+						    <img src="img/1451496327047729700.jpg" class="logo-img" />
+					   </a>
+					   <a class="box-div">
+							<img src="img/1451496295152745194.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+						    <img src="img/1451496327047729700.jpg" class="logo-img" />
+					   </a>
+					</p>
+				</div>
+				<div class="logo-box">
+					<p>
+						<a class="box-div">
+						    <img src="img/1451495885110749360.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495209486986888.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451496153977939039.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451496265186291427.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451496295152745194.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+						    <img src="img/1451496327047729700.jpg" class="logo-img" />
+					   </a>
+					   <a class="box-div">
+							<img src="img/1451496295152745194.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+						    <img src="img/1451496327047729700.jpg" class="logo-img" />
+					   </a>
+					</p>
+					<p style="margin-top: 15px;">
+						<a class="box-div">
+						    <img src="img/1451495488942571449.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495587613306777.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495651715511524.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495777494839060.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495846406043546.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+						    <img src="img/1451495885110749360.jpg" class="logo-img" />
+					    </a>
+					</p>
+					<p>
+						<a class="box-div">
+						    <img src="img/1451495885110749360.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495209486986888.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451496153977939039.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451496265186291427.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451496295152745194.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+						    <img src="img/1451496327047729700.jpg" class="logo-img" />
+					    </a>
+					</p>
+				</div>
+				<div class="logo-box">
+					<p>
+						<a class="box-div">
+						    <img src="img/1450747557149339013.jpg" class="logo-img" />
+					    </a>
+						<a class="box-div">
+							<img src="img/1451495095040014292.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495209486986888.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495272782115178.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495325286608231.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+						    <img src="img/1451495384686130361.jpg" class="logo-img" />
+					    </a>
+					</p>
+					<p style="margin-top: 15px;">
+						<a class="box-div">
+						    <img src="img/1451495488942571449.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495587613306777.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495651715511524.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495777494839060.jpg" class="logo-img" />
+						</a>
+						<a\ class="box-div">
+							<img src="img/1451495846406043546.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+						    <img src="img/1451495885110749360.jpg" class="logo-img" />
+					    </a>
+					</p>
+					<p>
+						<a class="box-div">
+						    <img src="img/1451495885110749360.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451495209486986888.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451496153977939039.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451496265186291427.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+							<img src="img/1451496295152745194.jpg" class="logo-img" />
+						</a>
+						<a class="box-div">
+						    <img src="img/1451496327047729700.jpg" class="logo-img" />
+					    </a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--新的物品导航条1结束-->
+		<!--新的物品导航条2-->
+		<div class="two-html">
+			<div class="two_box">
+				<b style="font-size: 20px;">热门商铺</b><i>HTO STORES</i>
+			</div>
+			<div class="two_body">
+				<img src="img/logo1.jpg" style="display: block; float: left;" />
+				<div class="two_logo">
+					<p>
+						<a><i><img src="img/a1.jpg"/></i></a>
+						<a><i><img src="img/a2.jpg"/></i></a>
+						<a><i><img src="img/a3.jpg"/></i></a>
+						<a><i><img src="img/a4.jpg"/></i></a>
+						<a><i><img src="img/a2.jpg"/></i></a>
+						<a><i><img src="img/a11 (1).jpg"/></i></a>
+					</p>
+					<p>
+						<a><i><img src="img/a11 (2).jpg"/></i></a>
+						<a><i><img src="img/a13 (1).jpg"/></i></a>
+						<a><i><img src="img/a13 (2).jpg"/></i></a>
+						<a><i><img src="img/a15 (1).jpg"/></i></a>
+						<a><i><img src="img/a15 (2).jpg"/></i></a>
+						<a><i><img src="img/a17 (1).jpg"/></i></a>
+					</p>
+					<p>
+						<a><i><img src="img/a17 (2).jpg"/></i></a>
+						<a><i><img src="img/a19 (1).jpg"/></i></a>
+						<a><i><img src="img/a19 (2).jpg"/></i></a>
+						<a><i><img src="img/a20.jpg"/></i></a>
+						<a><i><img src="img/a21.jpg"/></i></a>
+						<a><i><img src="img/a22.jpg"/></i></a>
+					</p>
+					<p>
+						<a><i><img src="img/a24 (1).jpg"/></i></a>
+						<a><i><img src="img/a24 (2).jpg"/></i></a>
+						<a><i><img src="img/a25.jpg"/></i></a>
+						<a><i><img src="img/a7 (1).jpg"/></i></a>
+						<a><i><img src="img/a7 (2).jpg"/></i></a>
+						<a><i><img src="img/a9 (2).jpg"/></i></a>
+					</p>
+				</div>
+				<img src="img/logo2.png" style="display: block; float: right;"/>
+			</div>
+		</div>
+		<!--新的物品导航条2结束-->
+		<!--san 导航条-->
+		<div class="daohang_div">
+			<div class="dats_new">
+				<ul>
+					<li><h3>疯狂抢购</h3></li>
+					<li><h3>热销排行</h3></li>
+					<li><h3>商城热卖</h3></li>
+					<li><h3>商城推荐</h3></li>
+					<li><h3>新品上市</h3></li>
+				</ul>
+				<div class="title"><b>限时折扣</b></div>
+		    </div>
+		    <div class="map_new">
+		    	<div class="map_body">
+		    		<ul class="mapaa" style="border-bottom: none;">
+		    		
+		    	    </ul>
+					<ul>
+						<li style="border-left: none;">
+							<img src="img/li2 (1).jpg" id="logomap"/>
+							<p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p>
+						</li>
+						<li><img src="img/li2 (2).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p></li>
+						<li><img src="img/li2 (3).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p></li>
+						<li><img src="img/li2 (4).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p></li>
+						<li><img src="img/li2 (5).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p></li>
+					</ul>
+					
+					<ul>
+						<li style="border-left: none;">
+							<img src="img/li2 (1).jpg" id="logomap"/>
+							<p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p>
+						</li>
+						<li><img src="img/li2 (2).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p></li>
+						<li><img src="img/li2 (3).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p></li>
+						<li><img src="img/li2 (4).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p>
+						</li>
+						<li><img src="img/li2 (2).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p></li>
+						
+					</ul>
+					
+					<ul>
+						<li style="border-left: none;">
+							<img src="img/li2 (1).jpg" id="logomap"/>
+							<p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p>
+						</li>
+						<li><img src="img/li2 (2).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p></li>
+						<li><img src="img/li2 (3).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p></li>
+						<li><img src="img/li2 (4).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p></li>
+						<li><img src="img/li2 (3).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p></li>	
+					</ul>
+					<ul>
+						<li style="border-left: none;">
+							<img src="img/li2 (1).jpg" id="logomap"/>
+							<p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p>
+						</li>
+						<li><img src="img/li2 (2).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p>
+						</li>
+						<li><img src="img/li2 (2).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p>
+						</li>
+						<li><img src="img/li2 (2).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p></li>
+						<li><img src="img/li2 (3).jpg" id="logomap"/>
+						    <p>雅鹿全棉四件套纯棉套件床上</p>
+							<p>用品 回忆蓝 1.8米...</p>
+							<p>商城价： 333.0</p></li>
+					</ul>
+		    	</div>
+		    </div>
+		</div>
+		<!--san 导航条结束-->
+		<!--固定楼层栏-->
+		<div id="LoutiNav">
+			<ul>
+				<li class="hover">1F <span>食品</span> </li>
+				<li>2F <span>服饰</span> </li>
+				<li>3F <span>化妆</span> </li>
+				<li>4F <span>手机</span> </li>
+				<li>5F <span>家电</span> </li>
+				<li>6F <span>家纺</span> </li>
+				<li>7F <span>酒水</span> </li>
+				<li>8F <span>母婴</span> </li>
+				<li class="last">Top</li>
+			</ul>
+		</div>
+        
+		<!--楼层内容开始-->
+		<!--<div id="header"></div>-->
+		<div id="main">
+			<div class="Louti">
+				<!--1F div模块-->
+					<div class="fshang">
+						<p id="shang-p">
+							<span style="border-radius: none;">1F&nbsp;&nbsp;食品生鲜</span>
+						</p>
+						<ul>
+							<li class="yuqi"><a >精挑细选</a></li>
+							<li><a >食品保健</a></li>
+							<li><a >进口食品</a></li>
+							<li><a >糖果巧克力</a></li>
+						</ul>
+					</div>
+					<!--左边div-->
+					<div class="fzuo">
+						<div class="fzuoshang">
+							<div class="fzuoshang-di">
+								<span class="fzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="fzuoshang_span">
+									凤梨蓝莓
+								</span>
+								<span class="fzuoshang_span">
+									口香糖
+								</span>
+								<span class="fzuoshang_span">
+									棒棒糖
+								</span>
+								<span class="fzuoshang_span">
+									软糖
+								</span>
+								<span class="fzuoshang_span">
+									奶糖
+								</span>
+								<span class="fzuoshang_span">
+									果冻
+								</span>
+								<span class="fzuoshang_span">
+									杏仁
+								</span>
+								<span class="fzuoshang_span">
+									红枣
+								</span>
+								
+							</div>
+						</div>
+						<img src="img/1f1.jpg" style=" margin-top: -34px; display: block;"/>
+					</div>
+					<!--中边div-->
+					<div class="fzhong">
+						<div>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+						</div>
+						<div  class="zhong_a">
+							<ul class="zhong-div">
+							<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a">
+							<ul class="zhong-div">
+							<img src="img/1f_c.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a">
+							<ul class="zhong-div">
+							<img src="img/1f_d.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						</div>
+			        </div>
+			        <!--右边div-->
+					<div class="fyou">
+						<img src="img/1f2.jpg" style="display: block; height: 280px; width: 150px;"/>
+						<img src="img/1f3.jpg" style="display: block; height: 280px; width: 150px;" />
+					</div>
+					
+					<div class="fxia">
+						<div class="ind01">
+						    <div class="ind01_lunbo">
+						     	<div class="ind01_left"><</div>
+						        <div class="ind01_center">
+						            <ul id="ind01_tp1">
+						            	<li><img src="img/2.jpg"></li>
+						                <li><img src="img/2.jpg"></li>
+						                <li><img src="img/3.jpg"></li>
+						                <li><img src="img/4.jpg"></li>
+						                <li><img src="img/5.jpg"></li>
+						                <li><img src="img/6.jpg"></li>
+						                <li><img src="img/a3.jpg"></li>
+						                <li><img src="img/a7 (1).jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/11.jpg"></li>
+						                <li><img src="img/12.jpg"></li>
+						                <li><img src="img/13.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						            </ul>
+						        </div>             
+						        <div class="ind01_right">></div>            
+						    </div>
+						</div>
+					</div>
+			</div>
+			<div class="Louti">
+				<div class="afshang">
+						<p id="ashang-p">
+							<span style="width: 240px;height: 35px; border-bottom: none; font-size: 20px;line-height: 35px; color: black;">2F&nbsp;&nbsp;服装服饰</span>
+						</p>
+						<ul>
+							<li class="yuqi"><a >精挑细选</a></li>
+							<li><a >&nbsp;女装馆&nbsp;</a></li>
+							<li><a >&nbsp;T&nbsp;&nbsp;恤&nbsp;</a></li>
+							<li><a >&nbsp;中长款半身裙&nbsp;</a></li>
+						</ul>
+					</div>
+					<!--左边div-->
+					<div class="afzuo">
+						<div class="afzuoshang">
+							<div class="afzuoshang-di">
+								<span class="afzuoshang_span">
+									连衣裙
+								</span>
+								<span class="fzuoshang_span">
+									连体裤
+								</span>
+								<span class="fzuoshang_span">
+									短外套
+								</span>
+								<span class="fzuoshang_span">
+									风衣
+								</span>
+								<span class="fzuoshang_span">
+									POLO衫
+								</span>
+								<span class="fzuoshang_span">
+									迷你裤
+								</span>
+								<span class="fzuoshang_span">
+									登山鞋
+								</span>
+								<span class="fzuoshang_span">
+									高跟鞋
+								</span>
+								<span class="fzuoshang_span">
+									拉杆箱
+								</span>
+								
+							</div>
+						</div>
+						<img src="img/2f1(3).jpg" style=" margin-top: -34px; display: block;"/>
+					</div>
+					<!--中边div-->
+					<div class="afzhong">
+						<div>
+							<ul class="zhong-div">
+							<img src="img/2f1 (1).jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/2f1 (2).jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/2f1(5).jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/2f1(6).jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/2f1(8).jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/2f1(9).jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/2f(10).jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+						</div>
+						<div  class="zhong_a1">
+							<ul class="zhong-div">
+							<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a1">
+							<ul class="zhong-div">
+							<img src="img/1f_c.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a1">
+							<ul class="zhong-div">
+							<img src="img/1f_d.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						</div>
+			        </div>
+			        <!--右边div-->
+					<div class="afyou">
+						<img src="img/2f1(11).jpg" style="display: block; height: 280px; width: 150px;"/>
+						<img src="img/2f1(4).jpg" style="display: block; height: 280px; width: 150px;" />
+					</div>
+					
+					<div class="afxia">
+						<div class="ind02">
+						    <div class="ind02_lunbo">
+						     	<div class="ind02_left"><</div>
+						        <div class="ind02_center">
+						            <ul id="ind02_tp1">
+						            	<li><img src="img/2.jpg"></li>
+						                <li><img src="img/2.jpg"></li>
+						                <li><img src="img/3.jpg"></li>
+						                <li><img src="img/4.jpg"></li>
+						                <li><img src="img/5.jpg"></li>
+						                <li><img src="img/6.jpg"></li>
+						                <li><img src="img/a3.jpg"></li>
+						                <li><img src="img/a7 (1).jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/11.jpg"></li>
+						                <li><img src="img/12.jpg"></li>
+						                <li><img src="img/13.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						            </ul>
+						        </div>             
+						        <div class="ind02_right">></div>            
+						    </div>
+						</div>
+					</div>
+			</div>
+			<div class="Louti">
+				<div class="bfshang">
+						<p id="bshang-p">
+							<span style="width: 240px;height: 35px; border-bottom: none; font-size: 20px;line-height: 35px; color: black;">3F&nbsp;&nbsp;个性化妆</span>
+						</p>
+						<ul>
+							<li class="yuqi"><a >精挑细选</a></li>
+							<li><a >食品保健</a></li>
+							<li><a >进口食品</a></li>
+							<li><a >糖果巧克力</a></li>
+						</ul>
+					</div>
+					<!--左边div-->
+					<div class="bfzuo">
+						<div class="bfzuoshang">
+							<div class="bfzuoshang-di">
+								<span class="bfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="bfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="bfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="bfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="bfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="bfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="bfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="bfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="bfzuoshang_span">
+									芒果桃李
+								</span>
+								
+							</div>
+						</div>
+						<img src="img/1f1.jpg" style=" margin-top: -34px; display: block;"/>
+					</div>
+					<!--中边div-->
+					<div class="bfzhong">
+						<div>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+						</div>
+						<div  class="zhong_a2">
+							<ul class="zhong-div">
+							<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a2">
+							<ul class="zhong-div">
+							<img src="img/1f_c.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a2">
+							<ul class="zhong-div">
+							<img src="img/1f_d.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						</div>
+			        </div>
+			        <!--右边div-->
+					<div class="bfyou">
+						<img src="img/1f2.jpg" style="display: block; height: 280px; width: 150px;"/>
+						<img src="img/1f3.jpg" style="display: block; height: 280px; width: 150px;" />
+					</div>
+					
+					<div class="bfxia">
+						<div class="ind03">
+						    <div class="ind03_lunbo">
+						     	<div class="ind03_left"><</div>
+						        <div class="ind03_center">
+						            <ul id="ind03_tp1">
+						            	<li><img src="img/2.jpg"></li>
+						                <li><img src="img/2.jpg"></li>
+						                <li><img src="img/3.jpg"></li>
+						                <li><img src="img/4.jpg"></li>
+						                <li><img src="img/5.jpg"></li>
+						                <li><img src="img/6.jpg"></li>
+						                <li><img src="img/a3.jpg"></li>
+						                <li><img src="img/a7 (1).jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/11.jpg"></li>
+						                <li><img src="img/12.jpg"></li>
+						                <li><img src="img/13.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						            </ul>
+						        </div>             
+						        <div class="ind03_right">></div>            
+						    </div>
+						</div>
+					</div>
+			</div>
+			<div class="Louti">
+				<div class="cfshang">
+						<p id="cshang-p">
+							<span style="width: 240px;height: 35px; border-bottom: none; font-size: 20px;line-height: 35px; color: black;">4F&nbsp;&nbsp;手机数码</span>
+						</p>
+						<ul>
+							<li class="yuqi"><a >精挑细选</a></li>
+							<li><a >食品保健</a></li>
+							<li><a >进口食品</a></li>
+							<li><a >糖果巧克力</a></li>
+						</ul>
+					</div>
+					<!--左边div-->
+					<div class="cfzuo">
+						<div class="cfzuoshang">
+							<div class="cfzuoshang-di">
+								<span class="cfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="cfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="cfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="cfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="cfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="cfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="cfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="cfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="cfzuoshang_span">
+									芒果桃李
+								</span>
+								
+							</div>
+						</div>
+						<img src="img/1f1.jpg" style=" margin-top: -34px; display: block;"/>
+					</div>
+					<!--中边div-->
+					<div class="cfzhong">
+						<div>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+						</div>
+						<div  class="zhong_a3">
+							<ul class="zhong-div">
+							<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a3">
+							<ul class="zhong-div">
+							<img src="img/1f_c.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a3">
+							<ul class="zhong-div">
+							<img src="img/1f_d.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						</div>
+			        </div>
+			        <!--右边div-->
+					<div class="cfyou">
+						<img src="img/1f2.jpg" style="display: block; height: 280px; width: 150px;"/>
+						<img src="img/1f3.jpg" style="display: block; height: 280px; width: 150px;" />
+					</div>
+					
+					<div class="cfxia">
+						<div class="ind04">
+						    <div class="ind04_lunbo">
+						     	<div class="ind04_left"><</div>
+						        <div class="ind04_center">
+						            <ul id="ind04_tp1">
+						            	<li><img src="img/2.jpg"></li>
+						                <li><img src="img/2.jpg"></li>
+						                <li><img src="img/3.jpg"></li>
+						                <li><img src="img/4.jpg"></li>
+						                <li><img src="img/5.jpg"></li>
+						                <li><img src="img/6.jpg"></li>
+						                <li><img src="img/a3.jpg"></li>
+						                <li><img src="img/a7 (1).jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/11.jpg"></li>
+						                <li><img src="img/12.jpg"></li>
+						                <li><img src="img/13.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						            </ul>
+						        </div>             
+						        <div class="ind04_right">></div>            
+						    </div>
+						</div>
+					</div>
+			</div>
+			<div class="Louti">
+				<div class="dfshang">
+						<p id="dshang-p">
+							<span style="width: 240px;height: 35px; border-bottom: none; font-size: 20px;line-height: 35px; color: black;">5F&nbsp;&nbsp;家用电器</span>
+						</p>
+						<ul>
+							<li class="yuqi"><a >精挑细选</a></li>
+							<li><a >食品保健</a></li>
+							<li><a >进口食品</a></li>
+							<li><a >糖果巧克力</a></li>
+						</ul>
+					</div>
+					<!--左边div-->
+					<div class="dfzuo">
+						<div class="dfzuoshang">
+							<div class="dfzuoshang-di">
+								<span class="dfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="dfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="dfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="dfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="dfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="dfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="dfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="dfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="dfzuoshang_span">
+									芒果桃李
+								</span>
+								
+							</div>
+						</div>
+						<img src="img/1f1.jpg" style=" margin-top: -34px; display: block;"/>
+					</div>
+					<!--中边div-->
+					<div class="dfzhong">
+						<div>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+						</div>
+						<div  class="zhong_a4">
+							<ul class="zhong-div">
+							<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a4">
+							<ul class="zhong-div">
+							<img src="img/1f_c.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a4">
+							<ul class="zhong-div">
+							<img src="img/1f_d.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						</div>
+			        </div>
+			        <!--右边div-->
+					<div class="dfyou">
+						<img src="img/1f2.jpg" style="display: block; height: 280px; width: 150px;"/>
+						<img src="img/1f3.jpg" style="display: block; height: 280px; width: 150px;" />
+					</div>
+					
+					<div class="dfxia">
+						<div class="ind05">
+						    <div class="ind05_lunbo">
+						     	<div class="ind05_left"><</div>
+						        <div class="ind05_center">
+						            <ul id="ind05_tp1">
+						            	<li><img src="img/2.jpg"></li>
+						                <li><img src="img/2.jpg"></li>
+						                <li><img src="img/3.jpg"></li>
+						                <li><img src="img/4.jpg"></li>
+						                <li><img src="img/5.jpg"></li>
+						                <li><img src="img/6.jpg"></li>
+						                <li><img src="img/a3.jpg"></li>
+						                <li><img src="img/a7 (1).jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/11.jpg"></li>
+						                <li><img src="img/12.jpg"></li>
+						                <li><img src="img/13.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						            </ul>
+						        </div>             
+						        <div class="ind05_right">></div>            
+						    </div>
+						</div>
+					</div>
+			</div>
+			<div class="Louti">
+				<div class="efshang">
+						<p id="eshang-p">
+							<span style="width: 240px;height: 35px; border-bottom: none; font-size: 20px;line-height: 35px; color: black;">6F&nbsp;&nbsp;家居日用</span>
+						</p>
+						<ul>
+							<li class="yuqi"><a >精挑细选</a></li>
+							<li><a >食品保健</a></li>
+							<li><a >进口食品</a></li>
+							<li><a >糖果巧克力</a></li>
+						</ul>
+					</div>
+					<!--左边div-->
+					<div class="efzuo">
+						<div class="efzuoshang">
+							<div class="efzuoshang-di">
+								<span class="efzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="efzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="efzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="efzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="efzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="efzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="efzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="efzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="efzuoshang_span">
+									芒果桃李
+								</span>
+								
+							</div>
+						</div>
+						<img src="img/1f1.jpg" style=" margin-top: -34px; display: block;"/>
+					</div>
+					<!--中边div-->
+					<div class="efzhong">
+						<div>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+						</div>
+						<div  class="zhong_a5">
+							<ul class="zhong-div">
+							<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a5">
+							<ul class="zhong-div">
+							<img src="img/1f_c.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a5">
+							<ul class="zhong-div">
+							<img src="img/1f_d.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						</div>
+			        </div>
+			        <!--右边div-->
+					<div class="efyou">
+						<img src="img/1f2.jpg" style="display: block; height: 280px; width: 150px;"/>
+						<img src="img/1f3.jpg" style="display: block; height: 280px; width: 150px;" />
+					</div>
+					
+					<div class="efxia">
+						<div class="ind06">
+						    <div class="ind06_lunbo">
+						     	<div class="ind06_left"><</div>
+						        <div class="ind06_center">
+						            <ul id="ind06_tp1">
+						            	<li><img src="img/2.jpg"></li>
+						                <li><img src="img/2.jpg"></li>
+						                <li><img src="img/3.jpg"></li>
+						                <li><img src="img/4.jpg"></li>
+						                <li><img src="img/5.jpg"></li>
+						                <li><img src="img/6.jpg"></li>
+						                <li><img src="img/a3.jpg"></li>
+						                <li><img src="img/a7 (1).jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/11.jpg"></li>
+						                <li><img src="img/12.jpg"></li>
+						                <li><img src="img/13.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						            </ul>
+						        </div>             
+						        <div class="ind06_right">></div>            
+						    </div>
+						</div>
+					</div>
+			</div>
+			<div class="Louti">
+				<div class="ffshang">
+						<p id="fshang-p">
+							<span style="width: 240px;height: 35px; border-bottom: none; font-size: 20px;line-height: 35px; color: black;">7F&nbsp;&nbsp;酒类饮料</span>
+						</p>
+						<ul>
+							<li class="yuqi"><a >精挑细选</a></li>
+							<li><a >食品保健</a></li>
+							<li><a >进口食品</a></li>
+							<li><a >糖果巧克力</a></li>
+						</ul>
+					</div>
+					<!--左边div-->
+					<div class="ffzuo">
+						<div class="ffzuoshang">
+							<div class="ffzuoshang-di">
+								<span class="ffzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="ffzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="ffzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="ffzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="ffzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="ffzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="ffzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="ffzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="ffzuoshang_span">
+									芒果桃李
+								</span>
+								
+							</div>
+						</div>
+						<img src="img/1f1.jpg" style=" margin-top: -34px; display: block;"/>
+					</div>
+					<!--中边div-->
+					<div class="ffzhong">
+						<div>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+						</div>
+						<div  class="zhong_a6">
+							<ul class="zhong-div">
+							<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a6">
+							<ul class="zhong-div">
+							<img src="img/1f_c.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a6">
+							<ul class="zhong-div">
+							<img src="img/1f_d.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						</div>
+			        </div>
+			        <!--右边div-->
+					<div class="ffyou">
+						<img src="img/1f2.jpg" style="display: block; height: 280px; width: 150px;"/>
+						<img src="img/1f3.jpg" style="display: block; height: 280px; width: 150px;" />
+					</div>
+					
+					<div class="ffxia">
+						<div class="ind07">
+						    <div class="ind07_lunbo">
+						     	<div class="ind07_left"><</div>
+						        <div class="ind07_center">
+						            <ul id="ind07_tp1">
+						            	<li><img src="img/2.jpg"></li>
+						                <li><img src="img/2.jpg"></li>
+						                <li><img src="img/3.jpg"></li>
+						                <li><img src="img/4.jpg"></li>
+						                <li><img src="img/5.jpg"></li>
+						                <li><img src="img/6.jpg"></li>
+						                <li><img src="img/a3.jpg"></li>
+						                <li><img src="img/a7 (1).jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/11.jpg"></li>
+						                <li><img src="img/12.jpg"></li>
+						                <li><img src="img/13.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						            </ul>
+						        </div>             
+						        <div class="ind07_right">></div>            
+						    </div>
+						</div>
+					</div>
+			</div>
+			<div class="Louti">
+				<div class="gfshang">
+						<p id="gshang-p">
+							<span style="width: 240px;height: 35px; border-bottom: none; font-size: 20px;line-height: 35px; color: black;">8F&nbsp;&nbsp;母婴用品</span>
+						</p>
+						<ul>
+							<li class="yuqi"><a >精挑细选</a></li>
+							<li><a >食品保健</a></li>
+							<li><a >进口食品</a></li>
+							<li><a >糖果巧克力</a></li>
+						</ul>
+					</div>
+					<!--左边div-->
+					<div class="gfzuo">
+						<div class="gfzuoshang">
+							<div class="gfzuoshang-di">
+								<span class="gfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="gfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="gfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="gfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="gfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="gfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="gfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="gfzuoshang_span">
+									芒果桃李
+								</span>
+								<span class="gfzuoshang_span">
+									芒果桃李
+								</span>
+								
+							</div>
+						</div>
+						<img src="img/1f1.jpg" style=" margin-top: -34px; display: block;"/>
+					</div>
+					<!--中边div-->
+					<div class="gfzhong">
+						<div>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+						</div>
+						<div  class="zhong_a7">
+							<ul class="zhong-div">
+							<img src="img/1f_b.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a7">
+							<ul class="zhong-div">
+							<img src="img/1f_c.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+							<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+							</ul>
+							
+						</div>
+						<div  class="zhong_a7">
+							<ul class="zhong-div">
+							<img src="img/1f_d.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+							<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+							<span class="logo_spanb"><del>148.2</del></span>
+							<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+							<span class="logo_spand">148.2</span>
+						    </ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+							</ul>
+							<ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						    <ul class="zhong-div">
+								<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+								<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+								<span class="logo_spanb"><del>148.2</del></span>
+								<span class="logo_spanc"><img src="img/tubiao.png" style="display: block; margin-left: 8px;margin-top:5px;"/></span>
+								<span class="logo_spand">148.2</span>
+						    </ul>
+						</div>
+			        </div>
+			        <!--右边div-->
+					<div class="gfyou">
+						<img src="img/1f2.jpg" style="display: block; height: 280px; width: 150px;"/>
+						<img src="img/1f3.jpg" style="display: block; height: 280px; width: 150px;" />
+					</div>
+					<!--下部 div-->
+					<div class="gfxia">
+						<div class="ind08">
+						    <div class="ind08_lunbo">
+						     	<div class="ind08_left"><</div>
+						        <div class="ind08_center">
+						            <ul id="ind08_tp1">
+						            	<li><img src="img/2.jpg"></li>
+						                <li><img src="img/2.jpg"></li>
+						                <li><img src="img/3.jpg"></li>
+						                <li><img src="img/4.jpg"></li>
+						                <li><img src="img/5.jpg"></li>
+						                <li><img src="img/6.jpg"></li>
+						                <li><img src="img/a3.jpg"></li>
+						                <li><img src="img/a7 (1).jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/9.jpg"></li>
+						                <li><img src="img/11.jpg"></li>
+						                <li><img src="img/12.jpg"></li>
+						                <li><img src="img/13.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						                <li><img src="img/14.jpg"></li>
+						            </ul>
+						        </div>             
+						        <div class="ind08_right">></div>            
+						    </div>
+						</div>
+					</div>
+			</div>
+			<div class="Loutia">
+				<div class="loushang"><img src="img/logoshang.png" style="display: block; float: left;" /><a>您身边的超市</a></div>
+				<div class="newlou"></div>
+				<div class="newlou_a">
+					<div class="loutilogo"><img src="img/shaoshi1.jpg" id="shanglogo"/></div>
+					<span id="load_span">新丹兰.尚街</span>
+				</div>
+				<div class="newlou_a">
+					<div class="loutilogo"><img src="img/shaoshi2.jpg" id="shanglogo"/></div>
+					<span id="load_span">新丹兰.尚街</span>
+				</div>
+				<div class="newlou_a">
+					<div class="loutilogo"><img src="img/shaoshi3.jpg" id="shanglogo"/></div>
+					<span id="load_span">新丹兰.尚街</span>
+				</div>
+				<div class="newlou_a">
+					<div class="loutilogo"><img src="img/shaoshi4.jpg" id="shanglogo"/></div>
+					<span id="load_span">新丹兰.尚街</span>
+				</div>
+				<div class="newlou_a">
+					<div class="loutilogo"><img src="img/shaoshi5.jpg" id="shanglogo"/></div>
+					<span id="load_span">新丹兰.尚街</span>
+				</div>
+				<div class="newlou_a">
+					<div class="loutilogo"><img src="img/shaoshi6.jpg" id="shanglogo"/></div>
+					<span id="load_span">新丹兰.尚街</span>
+				</div>
+				<div class="newlou_a">
+					<div class="loutilogo"><img src="img/shaoshi7.jpg" id="shanglogo"/></div>
+					<span id="load_span">新丹兰.尚街</span>
+				</div>
+				<div class="newlou_a">
+					<div class="loutilogo"><img src="img/shaoshi8.jpg" id="shanglogo"/></div>
+					<span id="load_span">新丹兰.尚街</span>
+				</div>
+				<div class="newlou_a">
+					<div class="loutilogo"><img src="img/shaoshi9.jpg" id="shanglogo"/></div>
+					<span id="load_span">新丹兰.尚街</span>
+				</div>
+				<div class="newlou_a">
+					<div class="loutilogo"><img src="img/shaoshi10.jpg" id="shanglogo"/></div>
+					<span id="load_span">新丹兰.尚街</span>
+				</div>
+			</div>
+			<div class="Loutib"">
+				<div class="loushang"><img src="img/logoshang.png" style="display: block; float: left;" /><a>您身边沿街店铺</a></div>
+				<div class="newlou"></div>
+				<img src="img/diantu1.jpg" class="dianlogo"/>
+				<img src="img/diantu2.jpg" class="dianlogo"/>
+				<img src="img/diantu3.jpg" class="dianlogo"/>
+				<img src="img/diantu4.jpg" class="dianlogo"/>
+				<img src="img/diantu5.jpg" class="dianlogo"/>
+				<img src="img/diantu6.jpg" class="dianlogo"/>
+				<img src="img/diantu7.jpg" class="dianlogo"/>
+				<img src="img/diantu8.jpg" class="dianlogo"/>
+				<img src="img/diantu9.jpg" class="dianlogo"/>
+				<img src="img/diantu10.jpg" class="dianlogo"/>
+				<img src="img/diantu11.jpg" class="dianlogo"/>
+				<img src="img/diantu12.jpg" class="dianlogo"/>
+				<img src="img/diantu13.jpg" class="dianlogo"/>
+				<img src="img/diantu14.jpg" class="dianlogo"/>
+			</div>
+		</div>
+ <!--右边固定导航条   div-->
+		<div class="gudindaohang">
+			<img src="img/yonghu.png" style="margin-top: 10px;"/>
+			<div style="background: red;color: white;text-align: center; margin-top: 30px;">在线销售</div>
+			<div style="background: red;color: white;text-align: center; margin-top: 30px;">调查</div>
+			<div style="background: red;color: white;text-align: center; margin-top: 30px;">购物车</div>
+			<div style="background: red;color: white;text-align: center; margin-top: 30px;">关注</div>
+			<div style="background: red;color: white;text-align: center; margin-top: 30px;">收藏</div>
+			
+		</div>
+		
+		<!--末尾部分   div-->
+		<div class="weibu">
+			<div class="weishang">
+				<ul class="st">
+					<li>
+						<img src="img/QQ截图20170519135204.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+					<li>
+						<img src="img/QQ截图20170519135225.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+					<li>
+						<img src="img/QQ截图20170519135241.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+					<li>
+						<img src="img/QQ截图20170519135252.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+					<li>
+						<img src="img/QQ截图20170519135303.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="weizhong">
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<div class="weizuo">
+					<h2 style="color: red; font-size: 20px;">400-0310-707</h2>
+					<p>周一至周五 9:00-17:30</p>
+					<p>（仅收市话费）</p>
+					<button style="background: red; color: white;width: 121px;height: 28px; border: none;outline: none;">24小时在线客服</button>
+				</div>
+			</div>
+			<div class="weixia">
+				<p>友情链接：<a> 邢台亿搜人才网| 邯郸中小企业网| 亿搜人才网| 众贤服务网| 快递查询</a></p>
+				<p>关于我们| 管理团队| 商家入驻| 媒体报道| 站点地图| 招贤纳士| 帮助中心 ICP备案证书号:冀ICP备14019346号-1</p>
+				<p>© 2005-2017 聚惠买商城_河北网上商城分销服务平台 版权所有，并保留所有权利。 石家庄桥西区永安街46号 Tel: 400-0310-707 E-mail: juhuimai@126.com</p>
+			</div>
+		</div>
+		<!--<div id="footer"></div>-->
+		<!--楼层内容结束jq-->
+		<script type="text/javascript">
+			$("#LoutiNav ul li").not(".last").hover(function() {  //点击最后一个回到顶部
+				//鼠标滑上去
+				$(this).addClass("hover");
+			}, function() {
+				//鼠标移开
+				$(this).removeClass("hover");
+			});
+			 //鼠标点击
+			var mark = 1;
+			$("#LoutiNav ul li").not(".last").click(function() {
+				mark = 2; //改变标记
+				$("#LoutiNav ul li").find("span").removeClass("active");
+				$(this).find("span").addClass("active");
+				//点击左边导航 然后跳到指定的楼层
+				var $index = $(this).index(); //找到了对应的序列号
+				//alert($index);
+				var $top = $("#main .Louti").eq($index).offset().top; //获取制定Louti与浏览器上面的距离
+				//alert($top);
+				$("body,html").animate({
+					scrollTop: $top
+				}, 500, function() {
+					mark = 1;
+				}); //浏览器滚动的高度
+			});
+			 //浏览器串口滚动事件
+			$(window).scroll(function() {
+				if (mark == 1) {
+					var $t = $(this).scrollTop(); //获取滚动条滚动的高度
+					//document.title = $t;
+					if ($t > 1000) { //通过滚动条来判断
+						$("#LoutiNav").fadeIn(); //淡入 导航慢慢显示出来
+					} else {
+						$("#LoutiNav").fadeOut(); //淡出 导航慢慢消失
+					}
+					var $obj = $("#main .Louti");
+					//循环每一个Louti 然后找到最先满足条件的那个 Louti
+					$obj.each(function() {
+						var $index = $(this).index();
+						//楼层与浏览器上面的高度
+						var $height = $obj.eq($index).offset().top + $(this).height() / 2;
+						//alert($height) 
+						document.title = $t + "--" + $height;
+						if ($t < $height) {
+							$("#LoutiNav ul li").find("span").removeClass("active")
+							$("#LoutiNav ul li").eq($index).find("span").addClass("active");
+							return false;
+						}
+					});
+				}
+			});
+			//点击 Top按钮 跳转到浏览器顶部
+			$("#LoutiNav ul li.last").click(function() {
+				$("body,html").animate({
+					scrollTop: 0
+				}, 0, function() {
+					mark = 1;
+				});
+			});
+		</script>
+		
+	</body>
+	
+</html>

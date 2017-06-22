@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>基本信息</title>
+		<link rel="icon" href="http://www.juhuimai.cn/animated_favicon.gif" type="image/gif" />
+		<link rel="stylesheet" type="text/css" href="css/new_touwei.css"/>
+		<link rel="stylesheet" type="text/css" href="css/info_page.css"/>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/new_touwei.js"></script>
+		<script src="js/info_page.js"></script>
+	</head>
+	<body>
+		<!--头部div-->
+		<div class="head">
+			<!--头部居中div-->
+			<div class="head-bd">
+				<!--正文div-->
+				<div class="head-container">
+					<!--左边ul-->
+					<ul class="region">
+						<li class="region1">
+							<font style="color: #fff;" id="head-region1-font">邯郸</font>
+							<div id="city-box1" style="display: none;">
+								<!--隐藏的内容、-->
+								<div style="width: 100px; height: 200px; background: salmon;"></div>
+							</div>
+						</li>
+						<li class="region2">
+							<a href="#">[切换区县]</a>
+						</li>
+					</ul>
+					
+					<!--中间的欢迎-->
+					<font class="sn-login-info">
+						<em>欢迎光临本店</em>
+						<a href="#" class="sn-login">请登录</a>
+						<a href="#" class="sn-rigsiter">免费注册</a>
+					</font>
+					
+					<!--右边的ul-->
+					<ul class="sn-quick-menu">
+						<li class="li1">
+							<div class="sn-menu">
+								<a href="#">我的信息</a>
+								<div class="menu-bd aa" style="display: none;">
+									<a href="#">已买到的宝贝</a>
+									<a href="#">我的收货地址</a>
+								</div>
+							</div>
+						</li>
+						<li class="li2">
+							<a href="#" class="mui-global-iconfont">我关注的店铺</a>
+						</li>
+						<li class="li3">
+							<a href="#" class="mui-global-iconfont">购物车</a>
+						</li>
+						<li class="li4">
+							<div class="sn-menu">
+								<a href="#">收藏夹</a>
+								<div class="menu-bd bb" style="display: none;">
+									<a href="#">收藏宝贝</a>
+									<a href="#">收藏店铺</a>
+								</div>
+							</div>
+						</li>
+						<li class="li5"> 
+							<div class="sn-menu">
+								<a href="#" class="menu-hd sn-mobile-link">手机版</a>
+								<div class="img1" style="position: absolute;display: none; width: 70px;height: 50px;">
+									<img src="img/app.jpg"  style="position: inherit; z-index: 10001;"/>
+								</div>
+							</div>
+						</li>
+						<li class="li6">
+							<div class="sn-menu">
+								<a href="#" class="menu-hd sn-shangjia-link">商家支持</a>
+								<div class="img2" style="position: absolute;display: none; width: 144px;height: 200px; border: 1px solid gainsboro;">
+									<div class="img2-shangjia">
+										<div class="img2-shangjia-p1" style="border-bottom: 1px dotted black; height: 120px; margin-left: 10px;">
+											<a><h4>商家：</h4></a>
+											<p><a>售后流程</a>   &nbsp;  <a>购物流程</a></p>
+											<p><a>订购方式</a>   &nbsp;  <a>常见问题</a></p>
+											<p><a>文章资讯</a>   &nbsp;  <a>聚惠卡</a></p>
+											<p><a>认证商家</a>   &nbsp;  <a>商学院</a></p>
+										</div>
+										<div class="img2-shangjia-p2" style="border-bottom: 1px dotted black; margin-left: 10px;">
+											<a><h5>帮助:</h5></a>
+										    <p><a>帮助中心</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="li7">
+							<div class="sn-menu">
+								<a href="#" class="menu-hd sn-wangzhan-link" style="color: none; border: none;">网址导航</a>
+								<div class="img3" style="position: absolute;left: -1150px; display: none; width: 1203px;height: 136px; border: 1px solid gainsboro;">
+									<div class="img3-wangzhan">
+										<div class="img3-wangzhan1">
+											<h4 style="color: coral; font-size: 25px;">产品分类 Product</h4>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+										</div>
+										<div class="img3-wangzhan2">
+											<h4 style="color:blue; font-size: 25px;">店铺街Market</h4>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+										</div>
+										<div class="img3-wangzhan3">
+											<h4 style="color: black; font-size: 25px;">关于我们About</h4>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--导肮条div 头部-->
+		<div class="daohangtiao-head">
+			<div class="daohangtiao-tou">
+				<!--<导航条div 左边>-->
+				<div class="daohangtiao-a">
+					<img src="img/logo_hd.jpg" style="margin-top: 5px; width: 280px; height: 110px;"/>
+				</div>
+				<!--<导航条div 中部>-->
+				<div class="daohangtiao-b">
+					<ul>
+						<li class="doahangtiao-bb">宝贝</li>
+						<li class="doahangtiao-bc">店铺</li>
+					</ul>
+					<div class="daohangtiao-btn">
+						<input type="text" id="doahangtiaotet" placeholder="请输入关键字"/>
+						<input type="button" id="doahangtiaobut" value="搜索" />
+					</div>
+					<ul class="daohangtiao-u">
+						<li style="border: none;"><a href="#" >灯饰</a></li>
+						<li><a href="#">私房菜</a></li>
+						<li><a href="#">丛台酒店</a></li>
+						<li><a href="#">非凡旅游</a></li>
+						<li><a href="#">家居</a></li>
+						<li><a href="#">三星s6</a></li>
+						<li><a href="#">苹果</a></li>
+					</ul>
+				</div>
+				<!--<导航条div 右边>-->
+				<div class="daohangtiao-c">
+					<a href="#1" class="daohangtiao-imga"><img src="img/QQ截图20170510212607.png"/></a>
+					<a href="#2" class="daohangtiao-imga"><img src="img/QQ截图20170510212628.png"/></a>
+					<a href="#3" class="daohangtiao-imga"><img src="img/QQ截图20170510212659.png"/></a>
+				</div>
+			</div>
+		</div>
+		
+		<!--<  新的 nav导航条  头部>-->
+			<div class="nav-daohangtiao">
+				<div class="nav-a">
+					<div class="nav-fenlei">
+						<a href="#" title="全部商品分类" >全部商品分类</a>
+					</div>
+					<ul class="nav-U">
+						<li><a href="#" title="首页">首页</a></li>
+						<li><a href="#" title="食品生鲜">食品生鲜</a></li>
+						<li><a href="#" title="店铺街">店铺街</a></li>
+						<li><a href="#" title="积分商城">积分商城</a></li>
+						<li><a href="#" title="优惠活动">优惠活动</a></li>
+						<li><a href="#" title="智能扫货">智能扫货</a></li>
+						<li><a href="#" title="文章资讯">文章资讯</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--中间部分-->
+			<div class="ji_zhong">
+				<p><a href="#">首页</a>>用户中心</p>
+				<!--中间左边部分-->
+				<div class="ji_zuo">
+					<div class="jzuo_a">
+						<h2>会员中心</h2>
+						<div class="ja">
+							<div class="ja_mast">
+								<img src="images/touxiang.jpg" />
+							</div>
+							<ul>
+								<li>
+									<i><img src="images/QQ截图20170601111012.png"/></i>&nbsp;<a href="zhuce.html">修改资料</a>
+								</li>
+								<li>
+									<i><img src="images/QQ截图20170601111024.png"/></i>&nbsp;<a href="index.html">安全退出</a>
+								</li>
+							</ul>
+						</div>
+						<p>智慧鬼才</p>
+					</div>
+					
+					<div class="jzuo_b">
+						<p><img src="img/huiyuan.png"/><a>会员中心</a></p>
+						<ul>
+							<li><a>欢迎页&nbsp;&nbsp;&nbsp;</a>   <span>></span></li>
+							<li><a>用户信息</a> <span>></span></li>
+							<li><a>账户安全</a> <span>></span></li>
+							<li><a>收货地址</a> <span>></span></li>
+							<li><a>资金管理</a> <span>></span></li>
+							<li><a>我的红包</a> <span>></span></li>
+							<p><a>储值卡充值</a></p>
+					    </ul>
+					</div>
+					<div class="jzuo_c">
+						<p><img src="img/guowu.png"/><a>交易中心</a></p>
+						<ul>
+							<li><a>我的订单</a> <span>></span></li>
+							<li><a>退款/退货及维修</a> <span>></span></li>
+							<li><a>商品评价/晒单</a> <span>></span></li>
+							<li><a>商品收藏</a> <span>></span></li>
+							<li><a>店铺关注</a> <span>></span></li>
+							<li><a>我的竞拍</a> <span>></span></li>
+							<li><a>提货券入口</a> <span>></span></li>
+							<li><a>我的提货</a> <span>></span></li>
+					    </ul>
+					</div>
+					<div class="jzuo_d">
+						<p><img src="img/fuwu.png"/><a>会员中心</a></p>
+						<ul>
+							<li><a>缺货登记</a> <span>></span></li>
+							<li><a>我的留言</a> <span>></span></li>
+							<li><a>我要开店</a> <span>></span></li>
+					    </ul>
+					</div>
+				</div>
+				<!--中间右边部分-->
+				<div class="ji_you">
+					<div class="jyou_a">
+						<ul>
+							<li id="jali">基本信息</li>
+							<li>更改头像</li>
+							<li>实名认证</li>
+						</ul>
+					</div>
+					<div class="tap_ja">
+						<div id="ap1">
+							<table width="960px"height="330px" border="1px" bordercolor="gainsboro" cellspacing="0">
+									<tr>
+										<td width="30%" align="right">用户名称：</td>
+										<td width="70%" align="left">
+											<input type="text" placeholder="智慧鬼才" style="margin:0px 10px; width: 210px;height: 30px;background: #FFFFFF;"/>
+										</td>
+									</tr>
+									<tr>
+										<td width="30%" align="right">真实姓名：</td>
+										<td width="70%" align="left">
+											<input type="text" style="margin:0px 10px; width: 210px;height: 30px;background: #FFFFFF;"/>
+										</td>
+									</tr>
+									<tr>
+										<td width="30%" align="right">出生日期：</td>
+										<td width="70%" align="left">
+											<center style="margin-right:420px ;">
+												<form name="reg_testdate">
+													<select name="YYYY" onChange="YYYYDD(this.value)">
+														<option value="">请选择 年</option>
+													</select>
+													<select name="MM" onChange="MMDD(this.value)">
+														<option value="">选择 月</option>
+													</select>
+													<select name="DD">
+														<option value="">选择 日</option>
+													</select>
+												</form>
+											</center>
+										</td>
+									</tr>
+									<tr>
+										<td width="30%" align="right">性别：</td>
+										<td width="70%" align="left">
+											<input type="radio" name="ral"/ style="margin-left: 10px;">保密
+											<input type="radio" name="ral" checked="checked"/>男
+											<input type="radio" name="ral"/>女
+										</td>
+									</tr>
+									<tr>
+										<td width="30%" align="right">现居住地：</td>
+										<td width="70%" align="left">
+											
+											<select style="margin-left: 10px;">
+											  <option>请选择</option>
+											  <option>中国</option>
+											</select>
+											<select>
+											  <div style="height: 100px;overflow: scroll">
+											  <option>请选择</option>
+											  <option>中国</option>
+											  <option>Mercedes</option>
+											  <option>Audi</option>
+											  <option>Mercedes</option>
+											  <option>Audi</option>
+											  <option>Mercedes</option>
+											  <option>Audi</option>
+											  <option>Mercedes</option>
+											  <option>Audi</option>
+											  <option>Mercedes</option>
+											  <option>Audi</option>
+											  <option>Mercedes</option>
+											  <option>Audi</option>
+											  <option>Mercedes</option>
+											  <option>Audi</option>
+											  <option>Mercedes</option>
+											  <option>Audi</option>
+											  <option>Audi</option>
+											  <option>Mercedes</option>
+											  <option>Audi</option>
+											  <option>Mercedes</option>
+											  <option>Audi</option>
+											  <option>Mercedes</option>
+											  <option>Audi</option>
+											  <option>Mercedes</option>
+											  <option>Audi</option>
+											  </div>
+											</select>
+											<select>
+											  <option>请选择</option>
+											  <option>中国</option>
+											  <option>Mercedes</option>
+											  <option>Audi</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td width="30%" align="right">详细地址</td>
+										<td width="70%" align="left">
+											<input type="text" style="margin:0px 10px; width: 210px;height: 30px;background: #FFFFFF;"/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="7"><a id="opop">确认修改</a></td>
+									</tr>
+							</table>
+					    </div>
+						<div class="ja1">
+							<table width="960px"height="192px"  bordercolor="gainsboro" cellspacing="0">
+								
+									<tr>
+										<td width="30%" align="right">头像预览&nbsp;&nbsp;</td>
+										<td width="70%" align="left">
+											&nbsp;&nbsp;完善个人信息资料，上传头像图片有助于您结识更多的朋友。
+											<br />
+											&nbsp;&nbsp;<a style="color: red;">头像最佳默认尺寸为120x120像素。</a>
+										</td>
+									</tr>
+									<tr>
+										<td width="30%" align="right">更换头像&nbsp;&nbsp;</td>
+										<td width="70%" align="left">
+											&nbsp;&nbsp;<input type="file" name="box"/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3" width="70%" align="left"><button style="background: #ED5854;width: 80px;height: 30px; color: white;border: 0;outline: 0; margin: 0px 295px;">确认</button></td>
+									</tr>
+							    
+							</table>
+						</div>
+						<div class="ja1">
+							<table  width="960px"height="192px" border="1px" bordercolor="gainsboro" cellspacing="0">
+								
+									<tr>
+										<td width="30%" align="right">省份证号</td>
+										<td width="70%" align="left">
+											<input type="text" style="margin:0px 10px; width: 210px;height: 30px;background: #FFFFFF;"/>
+										</td>
+									</tr>
+									<tr>
+										<td width="30%" align="right">省份证件照</td>
+										<td width="70%" align="left">
+											&nbsp;&nbsp;正面：<input type="file" name="box"/>
+										</td>
+									</tr>
+									<tr>
+										<td width="30%" align="right"></td>
+										<td width="70%" align="left">
+											&nbsp;&nbsp;反面：<input type="file" name="box"/>
+										</td>
+									</tr>
+									<tr>
+										<td width="30%" align="right"></td>
+										<td width="70%" align="left">
+											<button style="background: #ED5854;width: 80px;height: 30px; color: white;border: 0;outline: 0; margin: 0px 10px;">确认</button>
+										</td>
+									</tr>
+							    
+							</table>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+			
+			
+			
+	    <!--末尾部分   div-->
+		<div class="weibu">
+			<div class="weishang">
+				<ul class="st">
+					<li>
+						<img src="img/QQ截图20170519135204.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+					<li>
+						<img src="img/QQ截图20170519135225.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+					<li>
+						<img src="img/QQ截图20170519135241.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+					<li>
+						<img src="img/QQ截图20170519135252.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+					<li>
+						<img src="img/QQ截图20170519135303.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="weizhong">
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<div class="weizuo">
+					<h2 style="color: red; font-size: 20px;">400-0310-707</h2>
+					<p>周一至周五 9:00-17:30</p>
+					<p>（仅收市话费）</p>
+					<button style="background: red; color: white;width: 121px;height: 28px; border: none;outline: none;">24小时在线客服</button>
+				</div>
+			</div>
+			<div class="weixia">
+				<p>友情链接：<a> 邢台亿搜人才网| 邯郸中小企业网| 亿搜人才网| 众贤服务网| 快递查询</a></p>
+				<p>关于我们| 管理团队| 商家入驻| 媒体报道| 站点地图| 招贤纳士| 帮助中心 ICP备案证书号:冀ICP备14019346号-1</p>
+				<p>© 2005-2017 聚惠买商城_河北网上商城分销服务平台 版权所有，并保留所有权利。 石家庄桥西区永安街46号 Tel: 400-0310-707 E-mail: juhuimai@126.com</p>
+			</div>
+		</div>
+	</body>
+	
+</html>

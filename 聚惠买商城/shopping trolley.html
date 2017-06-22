@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>购物车</title>
+		<meta name="description" content="">
+	    <meta name="keywords" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	    <meta name="format-detection" content="telephone=no" />
+	    <meta name="renderer" content="webkit">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <link rel="icon" href="http://www.juhuimai.cn/animated_favicon.gif" type="image/gif" />
+		<link rel="stylesheet" type="text/css" href="css/new_touwei.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopping trolley.css"/>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/new_touwei.js"></script>
+	</head>
+	<body>
+		<!--头部div-->
+		<div class="head">
+			<!--头部居中div-->
+			<div class="head-bd">
+				<!--正文div-->
+				<div class="head-container">
+					<!--左边ul-->
+					<ul class="region">
+						<li class="region1">
+							<font style="color: #fff;" id="head-region1-font">邯郸</font>
+							<div id="city-box1" style="display: none;">
+								<!--隐藏的内容、-->
+								<div style="width: 100px; height: 200px; background: salmon;"></div>
+							</div>
+						</li>
+						<li class="region2">
+							<a href="#">[切换区县]</a>
+						</li>
+					</ul>
+					
+					<!--中间的欢迎-->
+					<font class="sn-login-info">
+						<em>欢迎光临本店</em>
+						<a href="#" class="sn-login">请登录</a>
+						<a href="#" class="sn-rigsiter">免费注册</a>
+					</font>
+					
+					<!--右边的ul-->
+					<ul class="sn-quick-menu">
+						<li class="li1">
+							<div class="sn-menu">
+								<a href="#">我的信息</a>
+								<div class="menu-bd aa" style="display: none;">
+									<a href="#">已买到的宝贝</a>
+									<a href="#">我的收货地址</a>
+								</div>
+							</div>
+						</li>
+						<li class="li2">
+							<a href="#" class="mui-global-iconfont">我关注的店铺</a>
+						</li>
+						<li class="li3">
+							<a href="#" class="mui-global-iconfont">购物车</a>
+						</li>
+						<li class="li4">
+							<div class="sn-menu">
+								<a href="#">收藏夹</a>
+								<div class="menu-bd bb" style="display: none;">
+									<a href="#">收藏宝贝</a>
+									<a href="#">收藏店铺</a>
+								</div>
+							</div>
+						</li>
+						<li class="li5"> 
+							<div class="sn-menu">
+								<a href="#" class="menu-hd sn-mobile-link">手机版</a>
+								<div class="img1" style="position: absolute;display: none; width: 70px;height: 50px;">
+									<img src="img/app.jpg"  style="position: inherit; z-index: 10001;"/>
+								</div>
+							</div>
+						</li>
+						<li class="li6">
+							<div class="sn-menu">
+								<a href="#" class="menu-hd sn-shangjia-link">商家支持</a>
+								<div class="img2" style="position: absolute;display: none; width: 144px;height: 200px; border: 1px solid gainsboro;">
+									<div class="img2-shangjia">
+										<div class="img2-shangjia-p1" style="border-bottom: 1px dotted black; height: 120px; margin-left: 10px;">
+											<a><h4>商家：</h4></a>
+											<p><a>售后流程</a>   &nbsp;  <a>购物流程</a></p>
+											<p><a>订购方式</a>   &nbsp;  <a>常见问题</a></p>
+											<p><a>文章资讯</a>   &nbsp;  <a>聚惠卡</a></p>
+											<p><a>认证商家</a>   &nbsp;  <a>商学院</a></p>
+										</div>
+										<div class="img2-shangjia-p2" style="border-bottom: 1px dotted black; margin-left: 10px;">
+											<a><h5>帮助:</h5></a>
+										    <p><a>帮助中心</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="li7">
+							<div class="sn-menu">
+								<a href="#" class="menu-hd sn-wangzhan-link" style="color: none; border: none;">网址导航</a>
+								<div class="img3" style="position: absolute;left: -1150px; display: none; width: 1203px;height: 136px; border: 1px solid gainsboro;">
+									<div class="img3-wangzhan">
+										<div class="img3-wangzhan1">
+											<h4 style="color: coral; font-size: 25px;">产品分类 Product</h4>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+										</div>
+										<div class="img3-wangzhan2">
+											<h4 style="color:blue; font-size: 25px;">店铺街Market</h4>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+										</div>
+										<div class="img3-wangzhan3">
+											<h4 style="color: black; font-size: 25px;">关于我们About</h4>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+											<ul>
+												<li><a>食品生鲜</a></li>
+												<li><a>食品生鲜</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--导肮条div 头部-->
+		<div class="daohangtiao-head">
+			<div class="daohangtiao-tou">
+				<!--<导航条div 左边>-->
+				<div class="daohangtiao-a">
+					<img src="img/logo_hd.jpg" style="margin-top: 5px; width: 280px; height: 110px;"/>
+				</div>
+				<!--<导航条div 中部>-->
+				<div class="daohangtiao-b">
+					<ul>
+						<li class="doahangtiao-bb">宝贝</li>
+						<li class="doahangtiao-bc">店铺</li>
+					</ul>
+					<div class="daohangtiao-btn">
+						<input type="text" id="doahangtiaotet" placeholder="请输入关键字"/>
+						<input type="button" id="doahangtiaobut" value="搜索" />
+					</div>
+					<ul class="daohangtiao-u">
+						<li style="border: none;"><a href="#" >灯饰</a></li>
+						<li><a href="#">私房菜</a></li>
+						<li><a href="#">丛台酒店</a></li>
+						<li><a href="#">非凡旅游</a></li>
+						<li><a href="#">家居</a></li>
+						<li><a href="#">三星s6</a></li>
+						<li><a href="#">苹果</a></li>
+					</ul>
+				</div>
+				<!--<导航条div 右边>-->
+				<div class="daohangtiao-c">
+					<a href="#1" class="daohangtiao-imga"><img src="img/QQ截图20170510212607.png"/></a>
+					<a href="#2" class="daohangtiao-imga"><img src="img/QQ截图20170510212628.png"/></a>
+					<a href="#3" class="daohangtiao-imga"><img src="img/QQ截图20170510212659.png"/></a>
+				</div>
+			</div>
+		</div>
+		
+		<!--<  新的 nav导航条  头部>-->
+			<div class="nav-daohangtiao">
+				<div class="nav-a">
+					<div class="nav-fenlei">
+						<a href="#" title="全部商品分类" >全部商品分类</a>
+					</div>
+					<ul class="nav-U">
+						<li><a href="#" title="首页">首页</a></li>
+						<li><a href="#" title="食品生鲜">食品生鲜</a></li>
+						<li><a href="#" title="店铺街">店铺街</a></li>
+						<li><a href="#" title="积分商城">积分商城</a></li>
+						<li><a href="#" title="优惠活动">优惠活动</a></li>
+						<li><a href="#" title="智能扫货">智能扫货</a></li>
+						<li><a href="#" title="文章资讯">文章资讯</a></li>
+					</ul>
+				</div>
+			</div>
+		
+		<!--中间内容-->
+		<!--第一模块-->
+		<div class="gouwu_zhong">
+			<img src="img/gouwu_logo.jpg" />
+			<div class="gouwu_shang">
+				<ul>
+					<li>
+						<p>查看购物车</p>
+				    	<p>
+				    		<a>1</a>
+				    	    <span></span>
+				    	</p>
+					</li>
+					<li>
+						<p>拍下商品</p>
+				    	<p>
+				    		<a>2</a>
+				    	    <span></span>
+				    	</p>
+					</li>
+					<li>
+						<p>付款</p>
+				    	<p>
+				    		<a>3</a>
+				    	    <span></span>
+				    	</p>
+					</li>
+					<li>
+						<p>确认收货</p>
+				    	<p>
+				    		<a>4</a>
+				    	    <span></span>
+				    	</p>
+					</li>
+					<li>
+						<p>评价</p>
+				    	<p><a>5</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--第二模块-->
+		<div class="mokuai_gouwu">
+			<div id="product">
+			    <div id="list">
+			    	<div style="margin: 0px 10px;" class="h2" class="all-total"><label for=""><input type="checkbox" class="goods-check" id="AllCheck"><span>商品全选</span></label></div>
+			        <div class="h1">商品名称</div>
+			        <div class="h2">数量</div>
+			        <div class="h2">本店价</div>
+			        <div class="h2">小计</div>
+			        <div class="h3">操作</div>
+			    </div>
+			    
+			    
+			      <!-- 一个店铺 -->
+				<div class="one-shop">
+				    <!-- 一个商品 -->
+				    <span>供货商：龙凤店子</span>
+				    <div class="one-goods">
+					    <div class="goods-msg">
+					        <label for="" style="display: block;float: left; margin: 30px 10px;">
+					          <input type="checkbox" id="input" class="goods-check GoodsCheck">
+					        </label>
+					        <div class="logo_s">
+					        	<img src="img/gouwu_a.jpg" id="gou_logo" />
+					        	<a>现货带票【送钢化膜皮套】Huawei/华为 P8</a>
+					        	<a>标准版移动电信双4G手机 </a>
+					        </div>
+					        
+					        <div class="jiesuan">
+					        	<button type="button" class="minus">-</button>
+						        <input type="text" class="am-num-text" value="1"  style="width: 10px;"/>
+						        <button type="button" class="plus">+</button>
+					        </div>
+					    </div>
+					    <p class="yuan_g">￥<b class="shop-total-amount GoodsPrice">3698.00</b></p>
+					    <p class="yuan_g">￥<b class="shop-total-amount GoodsPrice">3698.00</b></p>
+					    <p class="yuan_g"><span class="shop-total-amount GoodsPrice">删除</span></p>
+				    </div>
+				    
+				    <div class="one-goods">
+					    <div class="goods-msg">
+					        <label for="" style="display: block;float: left; margin: 30px 10px;">
+					          <input type="checkbox" id="input" class="goods-check GoodsCheck">
+					        </label>
+					        <div class="logo_s">
+					        	<img src="img/gouwu_a.jpg" id="gou_logo" />
+					        	<a>现货带票【送钢化膜皮套】Huawei/华为 P8</a>
+					        	<a>标准版移动电信双4G手机 </a>
+					        </div>
+					        
+					        <div class="jiesuan">
+					        	<button type="button" class="minus">-</button>
+						        <input type="text" class="am-num-text" value="1"  style="width: 10px;"/>
+						        <button type="button" class="plus">+</button>
+					        </div>
+					    </div>
+					    <p class="yuan_g">￥<b class="shop-total-amount GoodsPrice">3698.00</b></p>
+					    <p class="yuan_g">￥<b class="shop-total-amount GoodsPrice">3698.00</b></p>
+					    <p class="yuan_g"><span class="shop-total-amount GoodsPrice">删除</span></p>
+				    </div>
+				    
+				    <div class="one-goods">
+					    <div class="goods-msg">
+					        <label for="" style="display: block;float: left; margin: 30px 10px;">
+					          <input type="checkbox" id="input" class="goods-check GoodsCheck">
+					        </label>
+					        <div class="logo_s">
+					        	<img src="img/gouwu_a.jpg" id="gou_logo" />
+					        	<a>现货带票【送钢化膜皮套】Huawei/华为 P8</a>
+					        	<a>标准版移动电信双4G手机 </a>
+					        </div>
+					        
+					        <div class="jiesuan">
+					        	<button type="button" class="minus">-</button>
+						        <input type="text" class="am-num-text" value="1"  style="width: 10px;"/>
+						        <button type="button" class="plus">+</button>
+					        </div>
+					    </div>
+					    <p class="yuan_g">￥<b class="shop-total-amount GoodsPrice">3698.00</b></p>
+					    <p class="yuan_g">￥<b class="shop-total-amount GoodsPrice">3698.00</b></p>
+					    <p class="yuan_g"><span class="shop-total-amount GoodsPrice">删除</span></p>
+				    </div>
+				    
+				    
+				    <!-- 店铺合计 -->
+				    <div class="zong_gou">
+				    	<p><a>继续购物</a></p>
+				    	<span>清空购物车</span>
+				    	<div class="shop-total">
+				            <label for="" style="margin-left: 150px;">
+				            <p>应付总额：￥<span class="shop-total-amount ShopTotal">0</span></p>
+				            <a style="color:gray;">,比市场价4278.00还节省了580.00(17%)</a>
+				       </div>
+				       <p style="background: red; width: 150px;"><a style="color: white;">去结算</a></p>
+				    </div>
+				</div>
+				
+				
+				<div class="gou_xia">
+					<ul class="gou_ul">
+						<li>购买的还买了</li>
+						<li>今日最受欢迎</li>
+						<li>我的收藏</li>
+					</ul>
+					<ul class="zhong-div">
+						<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+						<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+						<span class="logo_spanb"><del>148.2</del></span>
+						<span class="logo_spand">148.2</span>
+						<span class="logo_spanc">加入购物车</span>
+					</ul>
+					<ul class="zhong-div">
+						<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+						<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+						<span class="logo_spanb"><del>148.2</del></span>
+						<span class="logo_spand">148.2</span>
+						<span class="logo_spanc">加入购物车</span>
+					</ul>
+					<ul class="zhong-div">
+						<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+						<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+						<span class="logo_spanb"><del>148.2</del></span>
+						<span class="logo_spand">148.2</span>
+						<span class="logo_spanc">加入购物车</span>
+					</ul>
+					<ul class="zhong-div">
+						<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+						<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+						<span class="logo_spanb"><del>148.2</del></span>
+						<span class="logo_spand">148.2</span>
+						<span class="logo_spanc">加入购物车</span>
+					</ul>
+					<ul class="zhong-div">
+						<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+						<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+						<span class="logo_spanb"><del>148.2</del></span>
+						<span class="logo_spand">148.2</span>
+						<span class="logo_spanc">加入购物车</span>
+					</ul>
+					<ul class="zhong-div">
+						<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+						<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+						<span class="logo_spanb"><del>148.2</del></span>
+						<span class="logo_spand">148.2</span>
+						<span class="logo_spanc">加入购物车</span>
+					</ul>
+					<ul class="zhong-div">
+						<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+						<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+						<span class="logo_spanb"><del>148.2</del></span>
+						<span class="logo_spand">148.2</span>
+						<span class="logo_spanc">加入购物车</span>
+					</ul>
+					<ul class="zhong-div">
+						<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+						<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+						<span class="logo_spanb"><del>148.2</del></span>
+						<span class="logo_spand">148.2</span>
+						<span class="logo_spanc">加入购物车</span>
+					</ul>
+					<ul class="zhong-div">
+						<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+						<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+						<span class="logo_spanb"><del>148.2</del></span>
+						<span class="logo_spand">148.2</span>
+						<span class="logo_spanc">加入购物车</span>
+					</ul>
+					<ul class="zhong-div">
+						<img src="img/1f_a.jpg" style="width: 160px;height: 160px;display: block; padding: 20px 22px;" />
+						<span class="logo_spana">邯郸磁州窑·黑釉刻划剔刻·牡丹纹茶具·5头</span>
+						<span class="logo_spanb"><del>148.2</del></span>
+						<span class="logo_spand">148.2</span>
+						<span class="logo_spanc">加入购物车</span>
+					</ul>
+				</div>
+			</div>
+		</div>	
+			
+			
+		
+  
+		
+		
+		
+		
+		<!--末尾部分   div-->
+		<div class="weibu">
+			<div class="weishang">
+				<ul class="st">
+					<li>
+						<img src="img/QQ截图20170519135204.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+					<li>
+						<img src="img/QQ截图20170519135225.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+					<li>
+						<img src="img/QQ截图20170519135241.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+					<li>
+						<img src="img/QQ截图20170519135252.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+					<li>
+						<img src="img/QQ截图20170519135303.png""/>
+						<a href="#">
+						一小时快速维修
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="weizhong">
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<dl>
+					<dt style="font-size: 20px;">关于我们</dt>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+					<dd><b>隐私保护</b></dd>
+				</dl>
+				<div class="weizuo">
+					<h2 style="color: red; font-size: 20px;">400-0310-707</h2>
+					<p>周一至周五 9:00-17:30</p>
+					<p>（仅收市话费）</p>
+					<button style="background: red; color: white;width: 121px;height: 28px; border: none;outline: none;">24小时在线客服</button>
+				</div>
+			</div>
+			<div class="weixia">
+				<p>友情链接：<a> 邢台亿搜人才网| 邯郸中小企业网| 亿搜人才网| 众贤服务网| 快递查询</a></p>
+				<p>关于我们| 管理团队| 商家入驻| 媒体报道| 站点地图| 招贤纳士| 帮助中心 ICP备案证书号:冀ICP备14019346号-1</p>
+				<p>© 2005-2017 聚惠买商城_河北网上商城分销服务平台 版权所有，并保留所有权利。 石家庄桥西区永安街46号 Tel: 400-0310-707 E-mail: juhuimai@126.com</p>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-2.1.0.js"></script>	
+  <script>
+  // 数量减
+  $(".minus").click(function() {
+    var t = $(this).parent().find('.am-num-text');
+    t.val(parseInt(t.val()) - 1);
+    if (t.val() <= 0) {
+      t.val(0);
+    }
+    TotalPrice();
+  });
+  // 数量加
+  $(".plus").click(function() {
+    var t = $(this).parent().find('.am-num-text');
+    t.val(parseInt(t.val()) + 1);
+    
+    TotalPrice();
+  });
+  // 点击商品按钮
+  $(".GoodsCheck").click(function() {
+    var goods = $(this).closest(".one-shop").find(".GoodsCheck"); //获取本店铺的所有商品  closest() 方法返回被选元素的第一个祖先元素。
+    var goodsC = $(this).closest(".one-shop").find(".GoodsCheck:checked"); //获取本店铺所有被选中的商品
+    var Shops = $(this).closest(".one-shop").find(".ShopCheck"); //获取本店铺的全选按钮
+    if (goods.length == goodsC.length) { //如果选中的商品等于所有商品
+      Shops.prop('checked', true); //店铺全选按钮被选中
+      if ($(".ShopCheck").length == $(".ShopCheck:checked").length) { //如果店铺被选中的数量等于所有店铺的数量
+        $("#AllCheck").prop('checked', true); //全选按钮被选中
+        TotalPrice();
+      } else {
+        $("#AllCheck").prop('checked', false); //else全选按钮不被选中 
+        TotalPrice();
+      }
+    } else { //如果选中的商品不等于所有商品
+      Shops.prop('checked', false); //店铺全选按钮不被选中
+      $("#AllCheck").prop('checked', false); //全选按钮也不被选中
+      // 计算
+      TotalPrice();
+      // 计算
+    }
+  });
+  // 点击店铺按钮
+  $(".ShopCheck").change(function() {
+    if ($(this).prop("checked") == true) { //如果店铺按钮被选中
+      $(this).parents(".one-shop").find(".goods-check").prop('checked', true); //店铺内的所有商品按钮也被选中
+      if ($(".ShopCheck").length == $(".ShopCheck:checked").length) { //如果店铺被选中的数量等于所有店铺的数量
+        $("#AllCheck").prop('checked', true); //全选按钮被选中
+        TotalPrice();
+      } else {
+        $("#AllCheck").prop('checked', false); //else全选按钮不被选中
+        TotalPrice();
+      }
+    } else { //如果店铺按钮不被选中
+      $(this).parents(".one-shop").find(".goods-check").prop('checked', false); //店铺内的所有商品也不被全选
+      $("#AllCheck").prop('checked', false); //全选按钮也不被选中
+      TotalPrice();
+    }
+  });
+  // 点击全选按钮
+  $("#AllCheck").click(function() {
+    if ($(this).prop("checked") == true) { //如果全选按钮被选中
+      $(".goods-check").prop('checked', true); //所有按钮都被选中
+      TotalPrice();
+    } else {
+      $(".goods-check").prop('checked', false); //else所有按钮不全选
+      TotalPrice();
+    }
+    $(".ShopCheck").change(); //执行店铺全选的操作
+  });
+
+  function TotalPrice() {
+    var allprice = 0; //总价
+    $(".one-shop").each(function() { //循环每个店铺
+      var oprice = 0; //店铺总价
+      $(this).find(".GoodsCheck").each(function() { //循环店铺里面的商品
+        if ($(this).is(":checked")) { //如果该商品被选中
+          var num = parseInt($(this).parents(".one-goods").find(".am-num-text").val()); //得到商品的数量
+          var price = parseFloat($(this).parents(".one-goods").find(".GoodsPrice").text()); //得到商品的单价
+          var total = price * num; //计算单个商品的总价
+          oprice += total; //计算该店铺的总价
+        }
+        $(this).closest(".one-shop").find(".ShopTotal").text(oprice.toFixed(2)); //显示被选中商品的店铺总价
+      });
+      var oneprice = parseFloat($(this).find(".ShopTotal").text()); //得到每个店铺的总价
+      allprice += oneprice; //计算所有店铺的总价
+    });
+    $("#AllTotal").text(allprice.toFixed(2)); //输出全部总价
+  }
+  </script>
+</html>
