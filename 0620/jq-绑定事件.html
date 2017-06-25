@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<ul class="lists">
+				<li class="list">11</li>
+				<li class="list1">22</li>
+				<li class="list">33</li>
+				<li class="list">44</li>
+				<li class="list">55</li>
+				
+			</ul>
+			<button class="lists"  id="btn">增加</button>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script>
+//		$("#btn").click(function(){
+//			$("ul").append("<li class='list'>增加的元素</li>");     delegate  方法
+//		})
+
+//       on 方法
+		$("#btn").click(function(){
+			$("ul").append("<li>增加的元素</li>");       
+		})
+	/*	$("li").click(function(){
+			$(this).css({"background":"red"});
+		})
+	*/	
+//		1.bind
+		
+//		一对一
+  /*       $("li").bind("click",function(){
+         	$(this).css({"background":"red"})
+         })
+   */      
+//       多对一
+  /*       $("li").bind("click mouseover",function(){
+         	$(this).css({"background":"red"})
+         })
+  */       
+//       多对多
+/*
+         $("li").bind("click",function(){
+         	$(this).css({"background":"red"})
+         })
+         $("li").bind("mouseover",function(){
+         	$(this).css({"background":"yellow"})
+         })
+         $("li").bind("mouseout",function(){
+         	$(this).css({"background":"#fff"})
+         })
+ */        
+         
+//       2.live
+//       $("li").live("click",function(){
+//       	$(this).css({"background":"red"})
+//       })
+       /*  1.7版本可用   已经废除  */
+
+         
+//       3.delegate
+//       $(".lists").delegate(".list","click",function(){
+//       	$(this).css({"background":"yellow"})
+//       })
+         
+         
+//        4.on
+         $(".lists").on("click",".list1",function(){
+         	$(this).css({"background":"yellow"})
+         })
+	</script>
+</html>

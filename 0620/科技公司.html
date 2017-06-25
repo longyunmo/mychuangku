@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+		<link href="http://www.metinfo.cn/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<title>科技公司</title>
+		<style>
+			
+			body{
+				margin: 0;padding: 0;
+				/*font-size: 64.2px;*/
+			}
+			.logoa{width: 10rem; height: 4rem; background: yellow; display: block;float: left; margin-left: 2rem;}
+			.logoa>img{width:10rem;height: 4rem;display: block;float: left;text-align: center;}
+			/*.nav-a{background: yellow;}*/
+			.nav_div{float: right;width: 15rem;height: 4rem;}
+			.navbar-default {background: none; border: none; }
+			.collapse{float: right;}
+			.btn{float: left;border: none; margin:0 0.1rem;}
+			.collapse {padding: 0;}
+			.item img{width: 100%;}
+			.container{overflow: hidden; margin-top: 1rem;}
+			/*.dropdown-menu{position: absolute; z-index: 100;}*/ 
+			#myCarousel{}
+			.nav{position: relative;}
+			.carousel-inner{position: relative;}
+			/*.caa{position: absolute;top: 25rem;}
+			.cab{position: absolute; top: 25rem;}*/
+		</style>
+	</head>
+	<body>
+		<!--[if lte IE 8]>
+		<div class="text-center padding-top-50 padding-bottom-50 bg-blue-grey-100">
+		<p class="browserupgrade font-size-18">你正在使用一个<strong>过时</strong>的浏览器。请<a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，以提高您的体验。</p>
+		</div>
+	    <![endif]-->
+		<!--nav 导航条-->
+		<div class="container">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<a href="#" class="logoa">
+						<img id="logoa" src="img/a (3).png"/>
+					</a>
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"></a>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav nav-a">
+							<div class="nav_div">
+								<button class="btn btn-success btn-lg ">注册</button>
+								<button style="border: 1px solid green;" class="btn btn-default btn-lg ">登入</button>
+						    </div>
+							<li><a href="#">首页</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									产品 <b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">智能手表</a></li>
+									<li><a href="#">智能眼镜</a></li>
+									<li><a href="#">机器人</a></li>
+									<li><a href="#">体感车</a></li>
+									<li><a href="#">无人机</a></li>
+								</ul>
+							</li>
+							<li><a href="#">支持</a></li>
+							<li><a href="#">博客</a></li>
+							<li><a href="#">关于</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+        </div>
+        
+                      <!--轮播图-->
+        <div id="myCarousel" class="carousel slide">
+			<!-- 轮播（Carousel）指标 -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+			</ol>   
+			<!-- 轮播（Carousel）项目 -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/c (2).png" alt="First slide">
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="img/c (1).png" alt="Second slide">
+					<div class="carousel-caption"></div>
+				</div>
+			</div>
+			<!-- 轮播（Carousel）导航 -->
+			<a class="carousel-control left" href="#myCarousel" 
+			   data-slide="prev">&lsaquo;</a>
+			<a class="carousel-control right" href="#myCarousel" 
+			   data-slide="next">&rsaquo;</a>
+		</div> 
+	</body>
+	<script src="js/jquery-2.1.0.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</html>
