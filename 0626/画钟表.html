@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0; padding: 0;}
+			#a{border: 1px solid gainsboro;margin: 0 auto;display: block;}
+		</style>
+	</head>
+	<body>
+		<canvas width="600" height="600" id="a"></canvas>
+	</body>
+	<script type="text/javascript">
+		function fun(){
+			var canvas=document.getElementById("a");
+			var context=canvas.getContext("2d");
+			context.clearRect(0,0,600,600);
+			//获取时间
+			var time=new Date();
+			var y=time.getFullYear()  
+			var m=time.getMonth()
+			var d=time.getDate()
+			var h=time.getHours()
+			var q=time.getMinutes()
+			var s=time.getSeconds()
+			if(h>12){
+				h=h-12
+			}
+//			console.log(h)
+			
+			
+			//画圆
+			context.beginPath();
+			context.strokeStyle="#666666";
+			context.lineWidth="10";
+            context.arc(300,300,180,0,360*Math.PI/180, false);
+            context.stroke();
+            context.closePath();
+		    
+		    //画时针刻度
+		    for(var i=0;i<=12;i++){
+		    	context.save();
+		    	context.strokeStyle="#000000";
+		    	context.lineWidth=6;
+		    	context.translate(300,300);
+		    	context.beginPath()
+		    	context.rotate((i*30)*Math.PI/180);
+		    	context.moveTo(0,-150);
+		    	context.lineTo(0,-170);
+		    	context.stroke();
+		    	context.restore();
+		    }
+		    
+		    //秒针
+		    for(var i=0;i<=60;i++){
+		    	context.save();
+		    	context.strokeStyle="#000000";
+		    	context.lineWidth=3;
+		    	context.translate(300,300);
+		    	context.beginPath()
+		    	context.rotate((i*6)*Math.PI/180);
+		    	context.moveTo(0,-150);
+		    	context.lineTo(0,-160);
+		    	context.stroke();
+		    	context.restore();
+		    }
+		    
+		    //画时针
+		        context.save();
+		    	context.strokeStyle="#008000";
+		    	context.lineWidth=5;
+		    	context.translate(300,300);
+		    	context.beginPath()
+		    	context.rotate((h*30)*Math.PI/180);
+		    	context.moveTo(0,-110);
+		    	context.lineTo(0,10);
+		    	context.stroke();
+		    	context.restore();
+		    //画分针
+		        context.save();
+		    	context.strokeStyle="#4E97D9";
+		    	context.lineWidth=4;
+		    	context.translate(300,300);
+		    	context.beginPath()
+		    	context.rotate((q*6)*Math.PI/180);
+		    	context.moveTo(0,-120);
+		    	context.lineTo(0,15);
+		    	context.stroke();
+		    	context.restore();
+		    	
+		    //画秒针	
+		    	context.save();
+		    	context.strokeStyle="#000000";
+		    	context.lineWidth=3;
+		    	context.translate(300,300);
+		    	context.beginPath()
+		    	context.rotate((s*6)*Math.PI/180);
+		    	context.moveTo(0,-140);
+		    	context.lineTo(0,20);
+		    	context.stroke();
+		    	
+		    //秒针修饰
+		    	context.strokeStyle="#000000";
+		    	context.lineWidth=3;
+		    	context.fillStyle="#6600CC";
+		    	context.beginPath()
+		    	context.arc(0,0,6,0,360*Math.PI/180, false);
+		    	context.stroke();
+		    	context.closePath()
+		    	context.fill();
+		    	
+		    	context.strokeStyle="#4E97D9";
+		    	context.lineWidth=3;
+		    	context.fillStyle="#ADFF2F";
+		    	context.beginPath()
+		    	context.arc(0,-120,6,0,360*Math.PI/180, false);
+		    	context.stroke();
+		    	context.closePath()
+		    	context.fill();
+		    	context.restore(); //恢复
+		}
+		setInterval(fun,1000)
+	</script>
+</html>

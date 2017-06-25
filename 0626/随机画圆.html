@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0; padding: 0;}
+			body{background: #000;}
+			#a{background: white;}
+		</style>
+	</head>
+	<body>
+		<canvas width="600" height="400" id="a"></canvas>
+	</body>
+	<script type="text/javascript">
+		var r=1;
+		var g=1;
+		function fun(){
+			var canvas=document.getElementById("a");
+			var context=canvas.getContext("2d");
+			context.clearRect(0,0,600,400);
+			
+			r+=1
+			g-=0.01
+			if(r>=100){
+				r=100
+			}
+		    context.beginPath();  
+            context.arc(100,100,r,0,360*Math.PI/180, false);
+            context.fillStyle="rgba(0,78,100,"+g+")";
+            context.fill();
+            context.closePath();
+			
+		}setInterval(fun,1)
+			
+			
+		
+	</script>
+</html>
