@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>h5存储</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<style>
+			#txt{width: 200px; height: 100px;}
+			th,td{text-align: center;border: none;}
+			.th_a{
+				width: 10%;
+			}
+			.th_b{
+				width: 50%;
+			}
+			.th_c{
+				width: 40%;
+			}
+		</style>
+	</head>
+	<body>
+		<textarea id="date"></textarea>
+		<br />
+		<button class="btn btn-success" id="save">存储</button>
+		<button class="btn btn-success" id="read">读取</button>
+		<button class="btn btn-success" id="remove">删除</button>
+		<button class="btn btn-success" id="xiugai">修改</button>
+		<button class="btn btn-success" id="clear">清空</button>
+		<input id="wodek" type="hidden"/>
+		<div id="datas"></div>
+		
+	</body>
+	<script type="text/javascript">
+		var datas=document.getElementById("datas");
+		var data=document.getElementById("date");
+		var save=document.getElementById("save");
+		var read=document.getElementById("read");
+		var remove=document.getElementById("remove");
+		var xiu=document.getElementById("xiugai");
+		var clear=document.getElementById("clear");
+		var text=document.getElementById("txt");
+		var wodek=document.getElementById("wodek");
+		//存储
+		save.onclick=function(){
+			if(/^\s+$/.test(data.value)){
+				alert("输入不能为空!");
+			}else{
+				var key=wodek.value;
+				if (key=="") {
+					var key=new Date().getTime();
+				}
+				localStorage.setItem(key,data.value);
+			    data.value="";
+			    fun();
+			}
+		}
+		
+		//获取
+		read.onclick=fun;
+	 	function fun(){
+			
+			var table='<table class="table"><tr><th class=th_a></th><th class=th_b>key</th><th class=th_c>value</th></tr>';
+			for(var i=0;i<localStorage.length;i++){
+				var key=localStorage.key(i);
+//				console.log(key)
+				var value=localStorage.getItem(key);
+				table+='<tr><td><input type="radio" name="myyun"/></td><td>'+key+'</td><td>'+value+'</td></tr>';
+			}
+			table+="</table>";
+			datas.innerHTML=table;
+		} 
+		
+		//删除
+		remove.onclick=function(){
+            var a=document.getElementsByName("myyun");
+			for(var i=0;i<a.length;i++){
+				if(a[i].checked){
+					localStorage.removeItem(localStorage.key(i));
+				}
+			}
+			fun();
+		}
+		//修改
+		xiu.onclick=function(){
+			var a=document.getElementsByName("myyun");
+			for(var i=0;i<a.length;i++){
+				if(a[i].checked){
+					data.value=localStorage.getItem(localStorage.key(i));
+					wodek.value=localStorage.key(i);
+			    }
+			}
+			
+		}
+		
+		
+		//清空
+		clear.onclick=function(){
+			datas.innerHTML="";
+			localStorage.clear();
+//			fun()
+		}
+		
+	</script>
+</html>

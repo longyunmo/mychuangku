@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{margin: 0; padding: 0;}
+			#a{border: 1px solid  gainsboro;}
+		</style>
+	</head>
+	<body>
+		<canvas width="600" height="600" id="a"></canvas>
+	</body>
+	<script type="text/javascript">
+		function fun(){
+			var canvas=document.getElementById("a");
+			var context=canvas.getContext("2d")
+			//获取时间
+			var time=new Date();
+			var y=time.getFullYear();
+			
+			
+			//花圆
+			context.beginPath();
+			context.strokeStyle="#008000";
+			context.lineWidth="10";
+			context.arc(300,300,200,0,2*Math.PI,false)
+			context.stroke();
+			context.closePath();
+			
+			//时刻度
+			if(var i=0;i>=12;i++){
+				context.save();
+				context.
+			}
+		}
+	</script>
+</html>

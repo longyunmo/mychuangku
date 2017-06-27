@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>h5存储</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<style>
+			#txt{width: 200px; height: 100px;}
+		</style>
+	</head>
+	<body>
+		<input type="text" id="txt" />
+		<br />
+		<button class="btn btn-success" id="save">存储</button>
+		<button class="btn btn-success" id="read">读取</button>
+		<button class="btn btn-success" id="remove">删除</button>
+		<button class="btn btn-success" id="clear">清空</button>
+	</body>
+	<script type="text/javascript">
+		var save=document.getElementById("save");
+		var read=document.getElementById("read");
+		var remove=document.getElementById("remove");
+		var clear=document.getElementById("clear");
+		var text=document.getElementById("txt");
+		
+		save.onclick=function(){
+			var tet=text.value;
+		    var key=new Date().getTime();
+			localStorage.setItem(key,tet);
+		}
+		read.onclick=function(){
+			var length=localStorage.length;
+//			console.log(length)
+			var keys=localStorage.key(0);
+//			console.log(keys);
+			console.log(localStorage.getItem(keys));
+		}
+		
+		remove.onclick=function(){
+			localStorage.removeItem(localStorage.key(0));
+		}
+		clear.onclick=function(){
+			localStorage.clear();
+		}
+	</script>
+</html>
