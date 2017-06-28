@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			img{width: 200px;height: 200px;}
+			
+		</style>
+	</head>
+	<body>
+		<input type="button" value="1" id="a1" />
+		<input type="button" value="2" id="a1" />
+		<input type="button" value="3" id="a1" />
+		<input type="button" value="4" id="a1" />
+		<input type="button" value="5" id="a1" />
+		<div id="div1"></div>
+	</body>
+	<script>
+		var box=document.getElementsByTagName("input");
+		for(i=0;i<box.length;i++){
+			box[i].onclick=function(){
+				var xhr=new XMLHttpRequest();
+				var url='js/imgdata'+this.value+'.json?t='+new Date().getTime();
+				xhr.open("get",url,true);
+				xhr.send();
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4){
+						if(xhr.status==200){
+							var bdiv=JSON.parse(xhr.responseText);
+							var odiv=document.getElementById("div1");
+							odiv.innerHTML="";							for(i=0;i<bdiv.length;i++){
+								var img=document.createElement("img");
+								img.src="img/"+bdiv[i].url;
+								odiv.appendChild(img);
+							}
+					    }else{
+							alert('图片弹出失败'+xhr.status);
+						}
+				    }
+				}	
+	        }   
+		}
+	</script>
+</html>

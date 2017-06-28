@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分页上一页下一页</title>
+	</head>
+	<style>
+		*{
+		    margin:0;
+		    padding:0;
+		}
+		img{
+			width:250px;
+			height:350px;
+		}
+		input{
+			width:200px;
+			height:50px;
+		}
+		
+	</style>
+	<body>
+		<input type="button" id="btn1" value="上一页"/>
+		<input type="button" id="btn2" value="下一页"/>
+		<div id="div1"></div>
+		<script>
+		   var pageIndex=1;
+		   var oBtn1=document.getElementById("btn1");
+		   oBtn1.onclick=function(){
+		   	 if(pageIndex<=1){
+		   	 	alert("已经是第一页!");
+		   	 }else{
+		   	 	pageIndex--;
+		   	 	getData();
+		   	 }
+		   }
+		   var oBtn2=document.getElementById("btn2");
+		   oBtn2.onclick=function(){
+		   	if(pageIndex>=5){
+		   		alert("已结是最后一页!");
+		   	}else{
+		   	    pageIndex++;
+		   	    getData();
+		   	}
+		   }
+		   function getData(){
+		   	 var xhr=new XMLHttpRequest();
+		   	 var url="data/imgdata"+pageIndex+".json?t="+new Date().getTime();
+		   	 xhr.open("get",url,true);
+		   	 xhr.send();
+		   	 xhr.onreadystatechange=function(){
+		   	 	if(xhr.readyState==4){
+		   	 		if(xhr.status==200){
+		   	 			var arrImgs=eval("("+xhr.responseText+")");
+		   	 			var oDiv=document.getElementById("div1");
+		   	 			oDiv.innerHTML="";
+		   	 			for(var i=0;i<arrImgs.length;i++){
+		   	 				var oImg=document.createElement("img");
+		   	 				oImg.src="images/"+arrImgs[i].url;
+		   	 				oDiv.appendChild(oImg);
+		   	 			}
+		   	 		}else{
+		   	 			alert("加载失败!");
+		   	 		}
+		   	 	}
+		   	 }
+		   	 
+		   }
+		   getData();
+		</script>
+	</body>
+</html>

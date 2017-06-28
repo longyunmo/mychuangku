@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#oul{width: 1500px;height: 400px; list-style: none;}
+			li{width: 800PX;height: 100PX; background: goldenrod;}
+			span{width: 100px;height: 60px; display: block; text-align: center; float: left; color: gray;}
+			
+		</style>
+	</head>
+	<body>
+		<button id="a">搜索</button>
+		<ul id="oul">
+			<!--<li >
+				<span>商品地址</span><span>贵州凯里</span>
+				<span>商品地址</span><span>贵州凯里</span>
+				<span>商品地址</span><span>贵州凯里</span>
+				<span>商品地址</span><span>贵州凯里</span>
+			</li>-->
+		</ul>
+	</body>
+	<script>
+		window.onload=function(){
+			var b=document.getElementById("a");
+			b.onclick=function(){
+				//判断浏览器兼容
+//				if(windo.XMLHttpRequest){
+//					var xhr=new XMLHttpRequest();
+//				}else{
+//					var xhr=new ActiveXobject('Microsoft.XMLHTTP');
+//				}
+				
+				//判断浏览器兼容
+				var xhr=null;
+				try{
+					var xhr=new XMLHttpRequest();
+				}catch(e){
+					var xhr=new ActiveXobject('Microsoft.XMLHTTP');
+				}
+				//对象
+				var xhr=new XMLHttpRequest();
+				//配置
+				 xhr.open('get','http://hanz.vicp.io/test.json',true);
+				//请求
+				xhr.send();
+				//监听
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4){
+						if(xhr.status==200){
+							var Data=JSON.parse(xhr.responseText);
+							console.log(xhr.responseText);
+							for(var i=0;i<Data.length;i++){
+								var Li=document.createElement("li");
+//								var List='<li>'
+//											+'<span>商品地址</span><span>'+Data[i].id+'</span>'
+//											+'<span>商品名称</span><span>'+Data[i].name+'</span>'
+//											+'<span>商品价格</span><span>'+Data[i].price+'</span>'
+//											+'<span>商品数量</span><span>'+Data[i].quantity+'</span>'
+//										 +'</li>'
+//										Li.innerHTML=List;
+//										oul.appendChild(Li);
+								var oul=document.getElementById('oul');
+								oul.innerHTML='<li>'
+											+'<span>商品地址</span><span>'+Data[i].id+'</span>'
+											+'<span>商品名称</span><span>'+Data[i].name+'</span>'
+											+'<span>商品价格</span><span>'+Data[i].price+'</span>'
+											+'<span>商品数量</span><span>'+Data[i].quantity+'</span>'
+										 +'</li>'
+							}
+						}
+						else{
+							alert('出错啦,Err'+xhr.status);
+						}
+					}
+				}
+			}
+		}
+	</script>
+</html>

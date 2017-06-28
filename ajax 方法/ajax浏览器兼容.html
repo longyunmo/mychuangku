@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="a">按钮</button>
+	</body>
+	<script>
+		window.onload=function(){
+			var b=document.getElementById("a");
+			b.onclick=function(){
+				//判断浏览器兼容
+//				if(windo.XMLHttpRequest){
+//					var xhr=new XMLHttpRequest();
+//				}else{
+//					var xhr=new ActiveXobject('Microsoft.XMLHTTP');
+//				}
+				
+				//判断浏览器兼容
+				var xhr=null;
+				try{
+					var xhr=new XMLHttpRequest();
+				}catch(e){
+					var xhr=new ActiveXobject('Microsoft.XMLHTTP');
+				}
+				//对象
+				var xhr=new XMLHttpRequest();
+				//配置
+				 xhr.open('get','http://hanz.vicp.io/test.json',true);
+				//请求
+				xhr.send();
+				//监听
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4){
+						if(xhr.status==200){
+							alert(xhr.responseText);
+						}
+						else{
+							alert('出错啦,Err'+xhr.status);
+						}
+					}
+				}
+			}
+		}
+	</script>
+</html>

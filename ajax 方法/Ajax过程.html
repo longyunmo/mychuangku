@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<button id="btn">按钮</button>
+		
+		<input type="text" id="txt1" />
+		<input type="text" id="txt2" />
+		<input type="submit" id="txt3" />
+		
+	</body>
+	<script>
+		window.onload=function(){
+			var obtn=document.getElementById('btn');
+			obtn.onclick=function(){
+				//创建内置对象
+				var xhr=new XMLHttpRequest();
+				//配置信息
+				xhr.open('get','http://hanz.vicp.io/test.json',true);
+				//发送请求
+				xhr.send();
+				//监听结果
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4){  //后台处理结束
+						if(xhr.status==200){  //后台处理OK
+							alert(xhr.responseText);   //返回Json数据
+						}else{
+							alert('出错啦,Err'+xhr.status);//报错
+						}
+					}
+				}
+			}
+		}
+	</script>
+	<!--iq ajax 过程-->
+    <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript">
+		$("#txt3").click(function(){
+			$.ajax({
+				type:"post",
+				url:"http:/192.168.100.99:3000/",
+				async:true,
+				data:{name:$('#txt1').val(),content:$('#txt2').val()},
+				console.log($('#txt1').val());
+				dataType:"json"
+			}); 
+		})
+	</script>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		  *{
+		  	margin:0;
+		  	padding:0;
+		  }
+		  img{
+		  	width:200px;
+		  	height:350px;
+		  }
+	</style>
+</head>
+<body>
+<div id="div1"></div>
+<script>
+	var pageIndex=1;
+    function getData(){
+        var xhr;
+        if(window.XMLHttpRequest){
+            xhr=new XMLHttpRequest();
+        }else{
+            xhr=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        //alert(this.value);
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4){
+                if(xhr.status==200){
+                    //正常获取数据
+                    //希望创建一些img，img src 是通过ajax获取到的。把img 到放到div1的内部。
+                    var arrImgs=eval("("+xhr.responseText+")");
+                    //把ajax获取的数据（字符串类型）转换为数组。
+                    //数组中存放了 10个元素。每个元素是一个对象。
+                    /*var oImg={
+                     "name":"1jpg",
+                     "url":"1.jpg",
+                     "width":250,
+                     "height":300
+                     }*/
+                    var oDiv=document.getElementById("div1");
+                    //oDiv.innerHTML="";
+                    for(var i=0;i<arrImgs.length;i++){
+                        //用数组元素（对象）的url属性的值，来做img标签的src
+                        //创建img
+                        var oImg=document.createElement("img");
+                        oImg.src="img1/"+arrImgs[i].url;
+                        oDiv.appendChild(oImg);
+                    }
+
+                }else{
+                    alert("加载失败！");
+                }
+            }
+        }
+        var url="data/img1data"+pageIndex+".json?t="+new Date().getTime();//加上时间戳 防止缓存！
+        xhr.open("get",url,true);//get 方式 ，异步。
+        xhr.send();
+    }
+    getData();
+    //触发滚动事件的条件是：1减小div宽度；2减小div高度
+    document.onscroll=function(){
+        var divH=document.getElementById("div1").offsetHeight;
+        var clientH=document.documentElement.clientHeight||document.body.clientHeight;
+        var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+        if(scroll+clientH>=divH-50){
+            //看到了div的底部。需要继续加载更多数据。
+            pageIndex++;
+            getData();
+        }
+    }
+</script>
+</body>
+</html>

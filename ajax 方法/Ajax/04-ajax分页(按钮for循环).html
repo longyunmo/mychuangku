@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ajax分页加载10张图片</title>
+		<style>
+		 *{
+            margin:0;
+            padding: 0;
+        }
+        img{
+            width:  250px;
+            height: 300px;
+        }
+        input{
+            width:  30px;
+            height: 30px;
+        }
+
+		</style>
+	</head>
+	<body>
+	<input type="button" id="btn1" value="1"/>
+	<input type="button" id="btn2" value="2"/>
+	<input type="button" id="btn3" value="3"/>
+	<input type="button" id="btn4" value="4"/>
+	<input type="button" id="btn5" value="5"/>
+	<div id="div1"></div>
+	<script>
+	var arrBtn=document.getElementsByTagName("input");//先获取按钮的信息
+	   for(var i=0;i<arrBtn.length;i++){
+	   arrBtn[i].onclick=function(){
+	   var  xhr;
+	   if(window.XMLHttpRequest){
+	   	xhr=new XMLHttpRequest();
+	   }else{
+	   	xhr=new ActiveXObject("Microsoft.XMLHTTP");
+	   }
+	  
+	   xhr.onreadystatechange=function(){
+	   	if(xhr.readyState==4){
+	   		if(xhr.status==200){
+	   			var arrImgs=eval("("+xhr.responseText+")");//图片数组
+	   		    var oDiv=document.getElementById("div1");
+	   		    oDiv.innerHTML="";
+	   			for(var j=0;j<arrImgs.length;j++){
+	   			var oImg=document.createElement("img");
+	   			oImg.src="img1/"+arrImgs[j].url;
+	   			oDiv.appendChild(oImg);
+	   		}
+	   		}else{
+	   			alert("获取失败");
+	   	 }
+	    }
+	   }
+	   var url="data/img1data"+this.value+".json?t="+new Date().getTime();   
+	   xhr.open("get",url,true);
+	   xhr.send(); 
+	   }
+	   }
+	   
+	</script>
+	</body>
+</html>

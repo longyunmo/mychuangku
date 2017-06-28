@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        img{
+            width: 250px;
+            height: 350px;
+        }
+        input{
+            width: 1250px;
+            height: 30px;
+        }
+    </style>
+	<body>
+		<div id="div1"></div>
+		<input id="bt1" type="button" value="点击加载更多"/>
+		<script>
+		  var pageIndex=1;
+		  var oBt=document.getElementById("bt1");
+		  oBt.onclick=function(){
+		  	if(pageIndex>=5){
+		  		alert("已经最后一页!");
+		  	}else{
+		  		pageIndex++;
+		  		getDate();
+		  	}
+		  }
+		  function getDate(){
+		  	var xhr;
+		  	if(window.XMLHttpRequest){
+		  		xhr=new XMLHttpRequest();
+		  	}else{
+		  		xhr=new ActiveXObject("Microsoft.XMLHTTP")
+		  	}
+		  	xhr.onreadystatechange=function(){
+		  		if(xhr.onstatechange==4){
+		  			if(xhr.Status==200){
+		  				var arrImgs=eval("("+xhr.responseText+")");
+		  				var oDiv=document.getElementById("div1");
+		  				oDiv.innerHTML="";
+		  				for(var i=0;i<arrImgs.length;i++){
+		  					var oImg=document.createElement("img");
+		  					oImg.src="img1/"+arrImgs[i].url;
+		  					oDiv.appendChild();
+		  				}
+		  			}else{
+		  				alert("加载失败!");
+		  			}
+		  		}
+		  	}
+		  	var url="data/img1data"+pageIndex+".jason?t="+new Date().getTime();
+		  	xhr.open("get",url.true);
+		  	xhr.send();
+		  }
+		  getDate();
+		</script>
+	</body>
+</html>

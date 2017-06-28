@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#a{
+				width: 200px;
+				height: 100px;
+				border: 1px solid gainsboro;
+			}
+		</style>
+	</head>
+	<body>
+		两个网址为学习网址
+		http://www.yuanlairc.com/program/jsobject.html
+		<br />
+		http://www.jianshu.com/p/33f93b5e4fe9
+		<div id="a">改变背景颜色</div>
+	</body>
+	<script>
+		
+		//1.通过new 创建对象
+//		var obj=new Object();
+//		obj.name="yuhui";
+//		obj.sex="男";
+//		obj,func=function(){
+//			console.log(this.name)
+//		}
+//		this 指向,谁调用指向谁
+		
+		
+		//2.对象字面量或对象直接量 
+//		var obj={
+//			name:"yunhui",
+//			sex:"男",
+//			fubc:funciotion(){
+//				console.log(this.sex)
+//			}
+//		}
+		
+		//3.通过构造函数创建对象,构造函数和函数名首字母大写
+	/*	function Person(name,sex){
+			this.name=name;
+			this.sex=sex;
+			this.func=function(){
+				console.log(this.name);
+			}
+		}
+		var person1=new Person("张三","男");
+		person1.func();
+		var person2=new Person("里拉","女");
+		总结:在构造函数里,this 通过构造函数创建新对象
+	*/
+
+//		4.工厂模式
+	/*	function persons(name,sex){
+			var obj=new Object();
+			obj.name=name;
+			obj.sex=sex;
+			obj.func=function(){
+				console.log(this.name);
+			}
+			return obj;
+		}
+		var person3=persons("科比","男");
+//		总结:工厂模式可以把new放到函数里面,可以节省内存空间
+    */
+   
+   
+//      5.构造函数加原型
+//      this  直接写this ,this 指向window
+
+//      call()  apply()    改变this指向
+        function changeStyle(type,value){
+        	this.style[type]=value;
+//      	console.log(arguments.callee.length)     callee length 单独使0用
+//           arguments  检测当前函数的参数  属性:length  参数长度    callee 返回函数体
+        }
+        var a=document.getElementById("a");
+        changeStyle.call(a,"background","yellow");
+//      call 一个到多个的参数,第一个为this的指向 后面依次为 方法的参数
+        changeStyle.apply(a,["background","yellow"]);
+//      apply 一个到两个的参数, 第一个为this 的指向 如果方法有参数,以数组的形式传入
+    
+        
+       
+        
+	</script>
+</html>
