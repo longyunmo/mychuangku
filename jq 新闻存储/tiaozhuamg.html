@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+    	<h1 id="title"></h1>
+    	<h4>作者<p id="date"></p></h4>
+    	<h4 id="author"></h4>
+    	<p id="context"></p>
+    
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var url=location.href;    //网址或路径
+		console.log(url)
+        var a=url.substr(url.indexOf("=")+1);   /*substr截取字符  indexOf第一次出现的截取*/
+        console.log(a);
+        $.ajax({
+        	type:"GET",
+        	url:"js/new_file.json",
+        	async:true,
+        	dataType:"json",
+            success:function(data){
+            	// console.log(data);
+            	$("#title").html(data.list[a].title);
+            	$("#data").html(data.list[a].data);
+            	$("#author").html(data.list[a].author);
+            	$("#context").html(data.list[a].context);
+            }
+        })
+	})
+</script>
+</html>

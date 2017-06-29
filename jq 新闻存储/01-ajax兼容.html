@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>json 新闻请求</title>
+		<style type="text/css">
+			li{
+				width: 400px;
+				margin:50px auto;
+				list-style: none;
+				
+			}
+			a{
+               text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+	       <ul id="ula"></ul>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript">
+			$.ajax({
+				type:"get",
+				url:"js/new_file.json",
+				async:true,
+				dataType:"json",
+				success:function(data){
+					console.log(data);
+                    var lista=data.list;
+                    var ul=document.getElementById('ula');
+                    console.log(ul);
+                    for(var i=0;i<lista.length;i++){
+                         ul.innerHTML+="<li><a href='tiaozhuamg.html?type="+i+"'>"+lista[i].title+"——————"+lista[i].date+"</a></li>";
+                    }
+				}
+			})
+	</script>
+</html>
