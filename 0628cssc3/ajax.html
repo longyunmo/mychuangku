@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="txt" />
+		<input type="text" id="txt1" />
+		<input type="submit" id="btn" value="提交"/>
+	</body>
+	<script type="text/javascript">
+		$("#btn").click(function(){
+			$.ajax({
+				type:"post",
+				url:"http//192.168.100.99:3000",
+				async:true,
+				data:{test1:$("#txt").val(),test2:$("#txt1").val()},
+				dataType:"json"
+			});
+		})
+	</script>
+</html>

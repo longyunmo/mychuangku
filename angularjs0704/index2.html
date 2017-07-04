@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="js/angular.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<title></title>
+	</head>
+	<body class="container">
+		<div ng-controller="a">
+			<input type="text" ng-model="mo" />
+			<br />
+			<span>{{mo}}</span>
+		</div>
+	</body>
+	<script type="text/javascript">
+		angular.module("app",["ng"]).controller("a",function($scope){
+			$scope.span=0;
+		})
+	</script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="mapp">
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="js/angular.js"></script>
+		<title>angul轮播图</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			#a{width: 500px;height: 500px;border: 1px solid gainsboro;margin: 10px auto;position: relative;}
+			img{width: 500px;height: 500px;}
+			span{width:30px;height: 30px;display: block;}
+			.a1{
+				width: 30px;height: 30px;
+				display: block;
+				position: absolute;
+				top: 250px;
+				left: 1px;
+				text-align: center;
+				line-height: 30px;
+				background: #00FFFF;
+				border-radius: 50%;
+			}
+			.a2{
+				width: 30px;height: 30px;
+				display: block;
+				position: absolute;
+				top: 250px;
+				right: 1px;
+				line-height: 30px;
+				text-align: center;
+				background: #00FFFF;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a" ng-controller="yun" ng-mouseover="over()" ng-mouseout="out()">
+		<!--<p>{{lun}}</p>-->
+			<img ng-src="img/{{i}}.jpg" />
+			<span class="a1" ng-click="left()"><</span>
+			<span class="a2" ng-click="right()">></span>
+		</div>
+	</body>
+	<script type="text/javascript">
+		angular.module("mapp",["ng"]).controller("yun",function($scope,$interval){
+			$scope.i=1;
+			var i=$scope.i;
+			$scope.fun=function(){
+				i++;
+				if(i>5){
+					i=1;
+				}
+				$scope.i=i;
+			};
+			var t=$interval($scope.fun,1000)		
+			$scope.over=function(){
+				$interval.cancel(t)
+			};		
+			$scope.out=function(){
+				t=$interval($scope.fun,1000);
+			};
+			
+			$scope.left=function(){
+				i--;
+				if(i<1){
+					i=5;
+				}
+				$scope.i=i;
+			};
+			$scope.right=function(){
+				i++;
+				if(i>5){
+					i=1;
+				}
+				$scope.i=i;
+			};
+		})
+	</script>
+</html>

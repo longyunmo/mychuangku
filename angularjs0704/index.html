@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head ng-app="myapp">
+		<meta charset="utf-8" />
+        <!--<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>-->
+        <script type="text/javascript" src="js/angular.js"></script>
+        <link type="text/css" href="css/bootstrap.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="container" ng-controller="mycon">
+			<div class="container">
+				<h2>ng-show和ng-hide</h2>
+				<h3 ng-Show="true">现实</h3>
+				<h2>ng-disabled</h2>
+				<input type="checkbox" ng-disabled="ture" />
+				<h2>ng-checked</h2>
+				<input type="checkbox" ng-Checked="ture" />
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		angular.moduel("myapp",["ng"]).controller("mycon",function($scope){
+            $scope.name="0";
+		})
+	</script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="mapp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		
+		<style>
+			.sa{
+				width: 200px;
+				height: 200px;
+				display: block;
+				/*border: 1px solid gainsboro;*/
+				float: left;
+			}
+			img{
+				width: 200px;
+				height: 200px;
+			}
+			.sb{float: left;}
+		</style>
+	</head>
+	<body>
+		<div class="container" ng-controller="m1">
+			<select  ng-model="a">
+				<option value="1">篮球1</option>
+				<option value="2">篮球2</option>
+				<option value="3">篮球3</option>
+				<option value="4">篮球4</option>
+				<option value="5">篮球5</option>
+			</select>
+		</div>
+		<p>{{a}}</p>
+		<br />
+		<div class="container" ng-controller="m2">
+			<select name="名字" ng-model="b" class="sb">
+				<option value="1">头像1</option>
+				<option value="2">头像2</option>
+				<option value="3">头像3</option>
+				<option value="4">头像4</option>
+				<option value="5">头像5</option>
+			</select>
+			<span class="sa">
+				<img ng-src="img/{{b}}.jpg" />
+			</span>
+			<p>{{b}}</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript">
+		angular.module("mapp",["ng"]).controller("m1",function($scope){
+			$scope.a=1;
+		}).controller("m2",function($scope){
+			$scope.b=0;
+		});
+	</script>
+</html>

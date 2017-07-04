@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="js/angular.js"></script>
+    <!--<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>--> 
+</head>
+<body>
+    <h1>算数运算</h1>
+    <p>{{2+3}}</p>
+    <h1>算数运算</h1>
+    <p>{{6>5}}</p>
+    <h1>逻辑运算</h1>
+    <p>与{{6>5 && 2>3}}</p>
+    <p>或{{6>5 || 2>3}}</p>
+    <p>非{{!6>5}}</p>
+    <h1>三目运算</h1>
+    <p>条件加语句，满足先第一个否先第二个{{9>8?"错误":"正确"}}</p>
+    <h1>赋值运算</h1>
+    <p>{{num=6}}</p>
+    <p>变量可以全局调用{{num}}</p>
+    <h1>特殊运算</h1>
+    <h3 ng-init="obj=[angular]">{{obj[2]}}</h3>
+</body>
+</html>

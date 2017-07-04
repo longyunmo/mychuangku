@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>rem仿手机端</title>
+		<style type="text/css">
+			*{margin: 0; padding: 0;}
+			header{width: 100%;height: 1rem;background: gray;font-size: 0.2rem;text-align: center;line-height: 1rem;}
+			article{width: 100%;height: 9.5rem;background: gold;}
+			article>h2{width: 100%;height: 0.2rem;text-align: center;line-height: 0.2rem;font-size: 0.1rem;background: greenyellow;}
+			.a{width: 100%;height: 2rem;margin: 0.1rem 0;}
+			.a>li{width: 20%;height: 2rem;background: cyan;float: left;list-style: none;text-align: center;line-height: 2rem;}
+			img{width: 1rem; height: 1rem;}
+			footer{width: 100%;height: 1rem;background: gray;font-size: 0.2rem;text-align: center;line-height: 1rem;}
+		</style>
+	</head>
+	<body>
+	<header>
+		手机头部
+	</header>
+	<article>
+		<h2>中国风</h2>
+		<div class="a">
+			<li><img src="img/a.jpg"/></li>
+			<li><img src="img/b.jpg"/></li>
+			<li><img src="img/c.jpg"/></li>
+			<li><img src="img/d.jpg"/></li>
+			<li><img src="img/e.jpg"/></li>
+		</div>
+		<h2>婉约派</h2>
+		<div class="a">
+			<li><img src="img/a.jpg"/></li>
+			<li><img src="img/b.jpg"/></li>
+			<li><img src="img/c.jpg"/></li>
+			<li><img src="img/d.jpg"/></li>
+			<li><img src="img/e.jpg"/></li>
+		</div>
+		<h2>运动风</h2>
+		<div class="a">
+			<li><img src="img/a.jpg"/></li>
+			<li><img src="img/b.jpg"/></li>
+			<li><img src="img/c.jpg"/></li>
+			<li><img src="img/d.jpg"/></li>
+			<li><img src="img/e.jpg"/></li>
+		</div>
+		<h2>时尚达人</h2>
+		<div class="a">
+			<li><img src="img/a.jpg"/></li>
+			<li><img src="img/b.jpg"/></li>
+			<li><img src="img/c.jpg"/></li>
+			<li><img src="img/d.jpg"/></li>
+			<li><img src="img/e.jpg"/></li>
+		</div>
+	</article>
+	<footer>
+		手机尾部
+	</footer>
+	</body>
+	<script>
+		window.onload=function(){
+			document.documentElement.style.fontSize=document.documentElement.clientWidth/6.4+"px";
+			window.addEventListener("resize",function(){
+			document.documentElement.style.fontSize=document.documentElement.clientWidth/6.4+"px";	
+			})
+		}
+	</script>
+</html>

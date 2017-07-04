@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#a{
+				width: 300px;
+				height: 300px;
+				border: 27px solid gainsboro;
+				border-image: url(img/a.png)27 27 round;
+			}
+			#b{
+				width: 300px;
+				height: 300px;
+				border: 27px solid gainsboro;
+				border-image: url(img/a.png)27 27 stretch;
+			}
+			.a{
+				width: 300px;
+				height: 300px;
+				border: 54px solid black;
+				border-image-source: url(img/a.png);
+				border-image-slice:27 27 27 27;
+				outline: none; 
+				text-align: center;
+				
+			}
+			.b{
+				width: 300px;
+				height: 450px;
+				background: tan;
+				border-radius: 50%/60% 60% 40% 40%;
+			}
+			.c{
+				width: 500px;
+				height: 500px;
+				border-radius:50%;
+				background: linear-gradient(to right,red,green,blue,gainsboro,yellow);  /*to right 方向*/.c{width: 300px;height: 300px;background:repeating-radial-gradient(red 20px,green 30px,yellow 50px);border-radius: 50%;}
+				
+			}
+			.d{
+				width: 300px;height: 300px;
+			    background:repeating-radial-gradient(red 20px,green 30px,yellow 50px);border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a"></div>
+		<div id="b"></div>
+		<textarea class="a"></textarea>
+		<div class="b"></div>
+		<ul class="c"></ul>
+		<ul class="d"></ul>
+		
+		
+		
+		<div>
+			<ul></ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		
+	</script>
+</html>

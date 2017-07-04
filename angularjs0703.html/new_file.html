@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-App="myapp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/angular.js"></script>
+	</head>
+	<body>
+		<div ng-controller="a">
+			<h3>{{name}}</h3>
+			<ul>
+				<li>{{students:sname}}</li>
+				<li ng-repent=""></li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		angular.moduel("myApp",[ng]).controller("a",function(){
+			$scope.name="学生对象";
+			$scope.students={
+				sname:"xioaming",
+				gender:"boy",
+				score:"66"
+			};
+			
+		})
+	</script>
+</html>

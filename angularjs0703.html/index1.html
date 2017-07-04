@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script type="text/javascript" src="js/angular.js"></script>
+		<style type="text/css">
+			table{text-align: center;}
+			img{width: 100px; height: 100px;}
+		</style>
+	</head>
+	<body class="container" ng-controller="a">
+		<table class="table table-bordered">
+			<tr class="table-bordered" ng-Style="sty">
+				<td>序号</td>
+				<td>名称</td>
+				<td>价格</td>
+				<td>图片</td>
+				<td>日期</td>
+				<td>操作</td>
+			</tr>
+			
+			<tr ng-repeat="(i,arr) in data.list">
+				<td>{{arr.xuhao}}</td>
+				<td>{{arr.mingchen}}</td>
+				<td>{{arr.jiage}}</td>
+				<td><img ng-src="img/{{arr.img}}"/></td>
+				<td>{{arr.date}}</td>
+				<td><button class="btn btn-success" ng-click="del(i)">删除</button></td>
+			</tr>
+		</table>
+		<button class="btn-block btn-success" ng-click="jiazai()">加载更多</button>
+		
+	</body>
+	<script type="text/javascript">
+		angular.module("myApp",["ng"]).controller("a",function($scope){
+			$scope.data={"list":[
+				{
+					"xuhao":"1",
+					"mingchen":"智能手机",
+					"jiage":"1000",
+					"img":"a.jpg",
+					"date":new Date()
+				},{
+					"xuhao":"2",
+					"mingchen":"智能眼镜",
+					"jiage":"100",
+					"img":"b.jpg",
+					"date":new Date()
+				},{
+					"xuhao":"3",
+					"mingchen":"智能手表",
+					"jiage":"500",
+					"img":"c.jpg",
+					"date":new Date()
+				},{
+					"xuhao":"4",
+					"mingchen":"智能飞机",
+					"jiage":"10000",
+					"img":"d.jpg",
+					"date":new Date()
+				},{
+					"xuhao":"5",
+					"mingchen":"智能汽车",
+					"jiage":"10000",
+					"img":"e.jpg",
+					"date":new Date()
+				}
+			]};
+			$scope.del=function(index){
+//				console.log(index)
+                $scope.data.list.splice(index,1);
+			};
+			$scope.sty={
+				"background":"red"
+			};
+            $scope.jiazai=function(index){
+            	for(var i=0;i<5;i++){
+            		console.log(i)
+            		var obj=new Object();
+            		console.log(obj)
+            		obj.xuhao=6+(i);
+            		obj.mingchen="无人机";
+            		obj.jiage="20000";
+            		obj.img="a.jpg";
+            		obj.date=new Date();
+            		$scope.data.list.push(obj);
+            	}
+            }
+		})
+	</script>
+</html>

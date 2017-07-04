@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body> 
+        <input id="btn" type="text">
+        <input id="btn1" type="text">
+        <button id="btn2" type="submit" value="提交">改变内容</button>
+        
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript">
+       $("#btn2").click(function(){
+       	    $.ajax({
+        	type:"POST",
+        	url:"http://192.168.100.99:3000/",
+        	async:true,
+        	data:{name:$("#btn").val(),content:$("#btn1").val()},
+        	dataType:"json"
+        });
+        
+       })
+	</script>
+</html>

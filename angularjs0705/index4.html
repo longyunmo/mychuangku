@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="mapp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div class="container" ng-controller="m1">
+			<table class="container table table-bordered">
+				<tr>
+					<td>全部</td>
+					<td>全部</td>
+					<td>全部</td>
+					<td>全部</td>
+					<td>全部</td>
+				</tr>
+				<tr ng-repeat="i in list">
+					<td>{{i.low |lowercase}}</td>
+					<td>{{i.upp | uppercase}}</td>
+					<td>{{i.unm | number}}</td>
+					<td>{{i.cur | currency:'$'}}</td>
+					<td>{{i.date}}</td>
+				</tr>
+			</table>
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript">
+		angular.module("mapp",["ng"]).controller("m1",function($scope){
+			$scope.list=[
+			{"low":"LOWANGNHDFJ",
+				"upp":"afjdkshj",
+				"unm":"5844",
+				"cur":"100",
+				"date":new Date()},
+			{"low":"LOWANGNHDFJ",
+				"upp":"afjdkshj",
+				"unm":"5844",
+				"cur":"100",
+				"date":new Date()},
+			{"low":"LOWANGNHDFJ",
+				"upp":"afjdkshj",
+				"unm":"5844",
+				"cur":"100",
+				"date":new Date()},
+			{"low":"LOWANGNHDFJ",
+				"upp":"afjdkshj",
+				"unm":"5844",
+				"cur":"100",
+				"date":new Date()},
+			{"low":"LOWANGNHDFJ",
+				"upp":"afjdkshj",
+				"unm":"5844",
+				"cur":"100",
+				"date":new Date()}
+			]
+		});
+		
+	</script>
+</html>
