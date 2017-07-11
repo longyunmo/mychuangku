@@ -1,0 +1,36 @@
+
+<style type="text/css">
+	*{margin: 0; padding: 0;}
+	.footer>ul{list-style: none;}
+	.footer>ul>li{width: 33%; height: 30px; float: left;text-align: center;display: inline-block;}
+	/*.footer>ul>li>i{text-align: center;line-height:30px;}*/
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {border-color: white;}
+	.form-control{border-right: none;}
+	.input-group-addon{background-color: white; border-left: none;}
+	.img-ca{width: 120px; height: 90px;}
+	.btn{border-radius: none;}
+	.media{border: 1px solid gainsboro; margin: 10px;}
+</style>
+<!--</head>-->
+<div div ng-controller="diancan" style="padding-top:52px; padding-bottom:50px ;">
+	<div class="input-group container">
+	    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+	    <span class="input-group-addon"><i class="iconfont icon-sousuo-copy"></i></span>
+	</div>
+	<!--内容部分canvas-->
+	<div class="media container" ng-repeat="list in lis">
+	    <div class="media-left media-middle">
+		    <a ui-sref="xiang({mtitle:list.title,msrclg:list.srclg,mcontent:list.content,mcontmore:list.contmore,mprice:list.price})">
+		      <img class="media-object img-ca" ng-src="img/{{list.author}}" alt=''/>
+		    </a>
+	    </div>
+	    <div class="media-body">
+		    <h4 class="media-heading" style="margin: 8px 0px;">【{{list.title}}】</h4>
+		    <span style="display: block;height: 60px; border-bottom: 1px solid gainsboro; overflow: hidden;">{{list.content}}</span>
+		    <p style="color: red;">￥{{list.price}}</p>
+	    </div>
+	</div>
+	<button class="btn btn-block btn-success" id="fbt" ng-show="hide" ng-click="dainji()">加载更多</button>
+	<span class="btn btn-block btn-success" ng-hide="hide">没有更多数据了</span>
+	<!--footed部分-->
+</div>
